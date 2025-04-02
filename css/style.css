@@ -415,8 +415,8 @@ a{
     flex: 1;
     position: relative;
     display: flex;
-    justify-content: right;
-    align-items: right;
+    justify-content: center;
+    align-items: center;
 }
 
 .character {
@@ -447,7 +447,7 @@ a{
 .tag-uiux {
     background-color: #e6007e;
     top: 20%;
-    left: 10%;
+    left: 30%;
 }
 .tag-uiux::after {
     border-width: 6px 6px 6px 0;
