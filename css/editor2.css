@@ -77,9 +77,52 @@ body {
 .box p {
     margin: 5px 0;
 }
+.overview {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
 
+.overview-left {
+    flex: 1;
+    max-width: 50%;
+}
 
+.overview-left h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
 
+.overview-left h2 span {
+    font-size: 18px;
+    font-weight: normal;
+    color: gray;
+    margin-left: 8px;
+}
+
+.overview-left h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.overview-left p {
+    margin: 10px 0;
+}
+
+.team-info {
+    background: #f4f4f4;
+    padding: 10px;
+    border-left: 4px solid #ccc;
+}
+
+.overview-right {
+    flex: 1;
+    max-width: 50%;
+    font-size: 16px;
+    line-height: 1.6;
+}
 
 .section {
     max-width: 1200px;
