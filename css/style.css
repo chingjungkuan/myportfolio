@@ -405,6 +405,91 @@ a{
 		padding-bottom: 80px;
 	}
 }
+
+
+.left, .right {
+    flex: 1;
+}
+
+.center {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* 通用標籤樣式 */
+/* 通用標籤樣式 */
+.tag {
+    position: absolute;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+.tag::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+/* UIUX 標籤（粉色，靠左） */
+.tag-uiux {
+    background-color: #e6007e;
+    top: 20%;
+    left: 10%;
+}
+.tag-uiux::after {
+    border-width: 6px 6px 6px 0;
+    border-color: transparent #e6007e transparent transparent;
+    top: 50%;
+    right: -6px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Creativity 標籤（橘色，靠左） */
+.tag-creativity {
+    background-color: #f89b29;
+    bottom: 30%;
+    left: 8%;
+}
+.tag-creativity::after {
+    border-width: 6px 6px 6px 0;
+    border-color: transparent #f89b29 transparent transparent;
+    top: 50%;
+    right: -6px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Graphic Design 標籤（藍色，靠右） */
+.tag-design {
+    background-color: #0033cc;
+    bottom: 25%;
+    right: 10%;
+}
+.tag-design::after {
+    border-width: 6px 0 6px 6px;
+    border-color: transparent transparent transparent #0033cc;
+    top: 50%;
+    left: -6px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+
+
+
+
+
 .jumbotron .logo-image{
 	width: 320px;
 	height: 320px;
