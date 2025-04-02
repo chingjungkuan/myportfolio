@@ -461,7 +461,7 @@ a{
 .tag-creativity {
     background-color: #f89b29;
     bottom: 30%;
-    left: 8%;
+    left: 36%;
 }
 .tag-creativity::after {
     border-width: 6px 6px 6px 0;
@@ -475,7 +475,7 @@ a{
 .tag-design {
     background-color: #0033cc;
     bottom: 25%;
-    right: 10%;
+    right: 32%;
 }
 .tag-design::after {
     border-width: 6px 0 6px 6px;
