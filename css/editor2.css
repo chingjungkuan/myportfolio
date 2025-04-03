@@ -541,7 +541,7 @@ a{
 	.scroll-container {
 		display: flex;
 		gap: 20px;
-		max-width: 100%;
+		max-width: 1200px;
 		margin: 0 auto;
 		padding: 40px 20px;
 		overflow-x: auto;  /* 超出時水平滾動 */
