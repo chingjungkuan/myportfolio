@@ -311,7 +311,36 @@ a{
 .navbar .nav .nav-link:hover{
 	color: #185ADB;
 }
+
+@media screen and (max-width: 992px){
+	.navbar {
+		max-width: 768px;
+		width: 100%;
+		margin: 12px;
+		/* position: fixed; 可選，讓 navbar 固定在畫面頂部 */
+		
+		
+	}
+
+	.navbar .container{
+		max-width: 800px;
+		
+	}
+}
+
+
 @media screen and (max-width: 768px){
+	.navbar {
+		width: 100%;
+		margin: 12px;
+		/* position: fixed; 可選，讓 navbar 固定在畫面頂部 */
+	
+	}
+	.navbar .container{
+		max-width: 768px;
+		width: 100%;
+		
+	}
 	.navbar .nav{
 		position: fixed;
 		left: 0;
