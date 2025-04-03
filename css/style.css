@@ -258,12 +258,17 @@ a{
 .navbar{
 	/*border: 1px solid #000;*/
 	height: 64px;
+    max-width:1200px;
 	background-color: rgba(0,0,0,0.5);
+    margin: 24px;
+    border-radius: 12px;
 	position: fixed;
 	z-index: 500;
 	width: 100%;
-	left: 0;
-	top: 0;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
 }
 .navbar .brand{
 	display: inline-block;
@@ -415,8 +420,8 @@ a{
     flex: 1;
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
 }
 
 .character {
