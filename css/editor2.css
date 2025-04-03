@@ -542,7 +542,7 @@ a{
 		display: flex;
 		gap: 20px;
 		max-width: 100%;
-		margin: 0 16px;
+		margin: 0 auto;
 		padding: 40px 20px;
 		overflow-x: auto;  /* 超出時水平滾動 */
 		white-space: nowrap; /* 防止換行 */
