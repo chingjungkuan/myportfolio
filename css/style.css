@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*
  * Page name
- * Copyright 2020
+ * Copyright 2025
  * Author
  * Licensed
  */
@@ -398,7 +398,7 @@ transform: translateX(-50%);
 	/*border: 1px solid #000;*/
 	padding-top: 80px;
 	padding-bottom: 80px;
-	background-image: url('../images/bg/hero_banner.png');
+/* 	background-image: url('../images/bg/hero_banner.png'); */
 	background-size: cover;
 	background-attachment: fixed;
 }
