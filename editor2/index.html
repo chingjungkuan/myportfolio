@@ -1,155 +1,307 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editor2 - 作品展示</title>
-<!--     <link rel="stylesheet" href="styles.css"> -->
-    <link rel="stylesheet" href="css/normalize.css">
+	<meta charset="UTF-8">
+	<link href="images/favicon.ico" rel="shortcut icon"/>
+	<title>關靖蓉 Lucy Kuan</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="../css/editor2.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
-        <h1>EDITOR2</h1>
-        <p>相片書線上編輯器</p>
-        <img src="images/hero-image.png" alt="Editor2 示意圖">
-    </header>
-    
-   
-    <div class="section fade-in container">
-        <h2>設計流程</h2>
-        <div class="step">
-            <div class="number">1</div>
-            <div class="box">
-                <h3>Empathize</h3>
-                <p>Empathy Map</p>
-                <p>Personas</p>
-                <p>User Story Maps</p>
-                <p>Interview Method</p>
-                <p>Competitive Audit</p>
-            </div>
-        </div>
-        <div class="step">
-            <div class="number">2</div>
-            <div class="box">
-                <h3>Define</h3>
-                <p>Value Proposition</p>
-                <p>Information Architecture</p>
-            </div>
-        </div>
-        <div class="step">
-            <div class="number">3</div>
-            <div class="box">
-                <h3>Ideate</h3>
-                <p>Story Board</p>
-                <p>User Flow</p>
-            </div>
-        </div>
-        <div class="step">
-            <div class="number">4</div>
-            <div class="box">
-                <h3>Wireframe</h3>
-                <p>Wireframe</p>
-                <p>Lo-Fi Prototype</p>
-                <p>Usability Test</p>
-            </div>
-        </div>
-        <div class="step">
-            <div class="number">5</div>
-            <div class="box">
-                <h3>UI Design</h3>
-                <p>Visual Design System</p>
-                <p>UI Kit</p>
-            </div>
-        </div>
-        <div class="step">
-            <div class="number">6</div>
-            <div class="box">
-                <h3>Prototype</h3>
-                <p>Mockup</p>
-                <p>Hi-Fi Prototype Test</p>
-            </div>
-        </div>
-        <div class="step">
-            <div class="number">7</div>
-            <div class="box">
-                <h3>Test</h3>
-                <p>Usability Test</p>
-                <p>QA</p>
-            </div>
-        </div>
-    </div>
+	<div class="wrapper">
+		<!-- Start header -->
+		<header class="header">
+			<div class="navbar">
+				<div class="container">
+					<a href="#!" class="brand">
+						<h1> Lucy Kuan</h1>
+					</a>
+					<ul id="popup-menu" class="nav">
+						<li class="nav-item">
+							<a href="#about" class="nav-link">ABOUT</a>
+						</li>
+						<li class="nav-item">
+							<a href="#services" class="nav-link">SKILL</a>
+						</li>
+						<li class="nav-item">
+							<a href="#reservation" class="nav-link">TOOLS</a>
+						</li>
+						<li class="nav-item">
+							<a href="#ui-design" class="nav-link">UI DESIGN</a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact" class="nav-link">CONTACT</a>
+						</li>
+						<a href="#!" class="close-btn">
+							<span></span>
+							<span></span>
+						</a>
+					</ul>
+					<a href="#popup-menu" class="menu-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+				</div>
+			</div>
+		</header>
+		<!-- End header -->
 
-    <section class="section fade-in overview">
-    <div class="overview-left">
-        <h2>概述 <span>Overview</span></h2>
-        <h3>Editor2 - 相片書線上編輯器</h3>
-        <p>#B2C #SaaS #POD（客製化印刷服務）#RWD Website</p>
-        <p>
-            點點印會員用戶可透過 Editor2 這個線上編輯器製作點點印的產品（像是相片書、卡片、邀請卡、婚禮書約、精裝寫真本...等）。
-        </p>
-        <div class="team-info">
-            <p><strong>Team |</strong> TinTint 點點印</p>
-            <p><strong>Role |</strong> 🧑🏻‍💻 UIUX Designer</p>
-            <p><strong>Collaborators |</strong> UIUX Designer(1)・PM(1)・FE(1)・BE(1)・CS(1)</p>
-        </div>
-    </div>
-    <div class="overview-right">
-        <p>
-            作為 UI/UX 設計師，我透過使用者訪談、競品分析與觀察，深入了解目標用戶的需求與行為模式。我建立了 Personas、Empathy Map、User Story Maps，整理使用者的心理模型，並透過與 CS 關隊的討論，分析過去的使用者回饋，確保設計方向貼合實際需求。
-        </p>
-        <p>
-            在定案階段，我根據研究結果整合客群與架構與使用流程，並與產品經理確認細節後，開始構建 Wireframe、UI Flow 和設計系統。接著，我參與原型測試與用戶測驗，確保最終設計能有效解決用戶的痛點，並順利推動開發進程。
-        </p>
-    </div>
-    </section>
+		<!-- Start main -->
+		<section class="main">
+			
+			<!-- Start jumbotron -->
+			<div class="jumbotron">
+				<div class="mask-dark"></div>
 
-    
-    <section class="section fade-in">
-        <h2>痛點與觀察</h2>
-        <p>分析新手用戶遇到的問題，改進 UI 及流程，降低學習成本。</p>
-        <img src="images/painpoints.png" alt="痛點分析">
-    </section>
-    
-    <section class="section fade-in">
-        <h2>解決方案</h2>
-        <p>透過簡化 UI 設計、優化導航、提供新手引導等方式提升用戶體驗。</p>
-        <img src="images/solution.png" alt="解決方案示意圖">
-    </section>
-    
-    <section class="section fade-in">
-        <h2>資訊架構</h2>
-        <img src="images/ia.png" alt="資訊架構示意圖">
-    </section>
-    
-    <section class="section fade-in">
-        <h2>User Flow</h2>
-        <img src="images/user-flow.png" alt="使用者流程示意圖">
-    </section>
-    
-    <section class="section fade-in">
-        <h2>Wireframe</h2>
-        <img src="images/wireframe.png" alt="線框圖示">
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 Editor2. All rights reserved.</p>
-    </footer>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const sections = document.querySelectorAll(".fade-in");
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("visible");
-                    }
-                });
-            }, { threshold: 0.1 });
+                <div class="container">
+                    <div class="left"></div>
+                    
+                    <div class="center">
+                
+                    </div>
             
-            sections.forEach(section => observer.observe(section));
-        });
-    </script>
+                    <div class="right"></div>
+                </div>
+			</div>
+			<!-- End jumbotron -->
+            <!-- 開始設計流程 -->
+             
+            <div class="section fade-in overview">
+                <!-- <div class="row"> -->
+                    <!-- <div class="col-lg-2 col-md-12"> -->
+                        <h2>設計流程</h2>
+                        <div class="step">
+                            <div class="number">1</div>
+                            <div class="box">
+                                <h3>Empathize</h3>
+                                <p>✦ Empathy Map</p>
+                                <p>✦ Personas</p>
+                                <p>✦ User Story Maps</p>
+                                <p>✦Interview Method</p>
+                                <p>✦ Competitive Audit</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="number">2</div>
+                            <div class="box">
+                                <h3>Define</h3>
+                                <p>Value Proposition</p>
+                                <p>Information Architecture</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="number">3</div>
+                            <div class="box">
+                                <h3>Ideate</h3>
+                                <p>Story Board</p>
+                                <p>User Flow</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="number">4</div>
+                            <div class="box">
+                                <h3>Wireframe</h3>
+                                <p>Wireframe</p>
+                                <p>Lo-Fi Prototype</p>
+                                <p>Usability Test</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="number">5</div>
+                            <div class="box">
+                                <h3>UI Design</h3>
+                                <p>Visual Design System</p>
+                                <p>UI Kit</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="number">6</div>
+                            <div class="box">
+                                <h3>Prototype</h3>
+                                <p>Mockup</p>
+                                <p>Hi-Fi Prototype Test</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="number">7</div>
+                            <div class="box">
+                                <h3>Test</h3>
+                                <p>Usability Test</p>
+                                <p>QA</p>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                <!-- </div> -->
+            </div>
+        <!-- 設計流程結束 -->
+        <!-- 概述開始 -->
+            <section class="section fade-in overview">
+            <div class="overview-left">
+                <h2>概述 <span>Overview</span></h2>
+                <h3>Editor2 - 相片書線上編輯器</h3>
+                <p>#B2C #SaaS #POD（客製化印刷服務）#RWD Website</p>
+                <p>
+                    點點印會員用戶可透過 Editor2 這個線上編輯器製作點點印的產品（像是相片書、卡片、邀請卡、婚禮書約、精裝寫真本...等）。
+                </p>
+                <div class="team-info">
+                    <p><strong>Team |</strong> TinTint 點點印</p>
+                    <p><strong>Role |</strong> 🧑🏻‍💻 UIUX Designer</p>
+                    <p><strong>Collaborators |</strong> UIUX Designer(1)・PM(1)・FE(1)・BE(1)・CS(1)</p>
+                </div>
+            </div>
+            <div class="overview-right">
+                <p>
+                    作為 UI/UX 設計師，我透過使用者訪談、競品分析與觀察，深入了解目標用戶的需求與行為模式。我建立了 Personas、Empathy Map、User Story Maps，整理使用者的心理模型，並透過與 CS 關隊的討論，分析過去的使用者回饋，確保設計方向貼合實際需求。
+                </p>
+                <p>
+                    在定案階段，我根據研究結果整合客群與架構與使用流程，並與產品經理確認細節後，開始構建 Wireframe、UI Flow 和設計系統。接著，我參與原型測試與用戶測驗，確保最終設計能有效解決用戶的痛點，並順利推動開發進程。
+                </p>
+            </div>
+            </section>
+            <!-- 概述結束 -->
+
+			<!-- Start about -->
+			<div id="about" class="hero hero-bg-white">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-12">
+							<div class="about-preview">
+								<h3 class="title">關靖蓉 | UI/UX Designer</h3>
+								<h5 class="subtitle">I'm the experience wizard who lets design speak.</h5><br>
+								<p class="para">大學參與 UI/UX 工作坊後，對介面設計產生濃厚興趣，並持續鑽研不同產品介面背後的設計邏輯。目前在 TinTint 點點印 擔任 UI/UX 設計師，關注設計趨勢，並透過分析需求、協調團隊，推動可行的解決方案。我與專案管理、開發及需求方密切合作，確保開發流程順暢，並提升產品體驗。未來希望持續挑戰不同類型的 UI/UX 專案，精進專業，創造兼具美感與實用性的設計。</p>
+							
+								<div class="btn-group-center">
+							    </div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12">
+							<div class="image-container">
+								<div class="image" style="background-image: url('images/bg/about.png');"></div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End about -->
+
+
+
+
+			<!-- Start portfolio -->
+			<div id="ui-design" class="hero hero-bg-white">
+				<div class="container">
+					<div class="section-intro">
+						<h2 class="title">UI DESIGN</h2><br><br>
+						<div class="row-high">
+							<div class="col-lg-8 col-md-12">
+								
+									<div class="ui-design-preview">
+										<div class="title">LUCY</div>
+										<h5 class="subtitle">Simple Video Interview Software
+										</h5><br>
+										<p class="para"> 
+											<a href="editor2/">查看 Editor2 作品</a>
+
+										LUCY是一個整合徵才相關功能的軟體，軟體即服務，其中透過虛擬面試的方式，達到面試者和面試官不需要在同一個時間地點即可完成面試，減少面試的成本。
+										軟體的使用流程發想由團隊共同完成，而我主要負責官網和軟體的介面設計以及平面設計的部分，像是Logo、整體產品形象識別以及一些行銷素材等。介面主要以簡約清楚且容易操作進行設計，再將設計好的介面交付給工程團隊進行後續的開發。										</p>
+										
+									</div>
+
+							</div>
+							<div class="col-lg-4 col-md-12">
+								<div class="image-container">
+									<div class="image" style="background-image: url('images/bg/ui_lucy.png');"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row-high">
+							<div class="col-lg-8 col-md-12">
+								
+									<div class="ui-design-preview">
+										<div class="title">STTM</div>
+										<h5 class="subtitle">Dropshipping Platform
+										</h5><br>
+										<p class="para"> 
+										STTM 是一個領先的電子商務、管理、營銷和運營資源提供者。我們通過多個渠道，包括電子商務和社交媒體等，銷售商品。透過STTM的系統搭配卓越的採購團隊，幫助用戶設置自動化流程，讓Dropshipping業務變得簡單。
+										優化了原本所有的功能和畫面，也改善了使用流程，主要加強在品牌整體的連貫性以及元件重新設定，提升用戶的使用感受。用戶介面設計變得好，使用上則會變得容易且兼具美觀。										</p>
+									</div>
+
+							</div>
+							<div class="col-lg-4 col-md-12">
+								<div class="image-container">
+									<div class="image" style="background-image: url('images/bg/ui_sttm.png');"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row-high">
+							<div class="col-lg-8 col-md-12">
+								
+									<div class="ui-design-preview">
+										<div class="title">Senseflow</div>
+										<h5 class="subtitle">影像工作室形象網站
+										</h5><br>
+										<p class="para"> 
+											為Senseflow攝影工作室設計一個網站，目標是透過網站可清楚呈現攝影作品帶來的效益，及呈現各類型攝影作品的風格。因此目標將重點放在攝影師的作品上，且必須有專業、和諧和清晰的資訊，快速讓使用者一目瞭然。
+											從網頁的介面設計到插圖後製、品牌Logo、識別設計及相關的Banner圖等，都由我獨立完成。</p>
+									</div>
+
+							</div>
+							<div class="col-lg-4 col-md-12">
+								<div class="image-container">
+									<div class="image" style="background-image: url('images/bg/ui_senseflow.png');"></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				
+				</div>
+			</div>
+			<!-- End portfolio -->
+
+			
+
+		</section>
+		<!-- End main -->
+
+		<!-- Start footer -->
+		<footer class="footer">
+			<div class="hero">
+				<div class="mask-dark"></div>
+				<div class="container">
+					<a href="#!" class="brand"></a>
+					<ul class="nav">
+						<li class="nav-item">
+							<a href="#about" class="nav-link">ABOUT</a>
+						</li>
+						<li class="nav-item">
+							<a href="#services" class="nav-link">SKILL</a>
+						</li>
+						<li class="nav-item">
+							<a href="#reservation" class="nav-link">TOOLS</a>
+						</li>
+						<li class="nav-item">
+							<a href="#ui-design" class="nav-link">UI DESIGN</a>
+						</li>
+					
+						<li class="nav-item">
+							<a href="#contact" class="nav-link">CONTACT</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>© Copyright 2025 All rights reserved</p>
+			</div>
+		</footer>
+		<!-- End footer -->
+	</div>
 </body>
 </html>
