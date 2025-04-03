@@ -256,18 +256,19 @@ a{
 
 /* navbar */
 .navbar{
-/*border: 1px solid #000;*/
-height: 64px;
-max-width:1200px;
-background-color: rgba(0,0,0,0.5);
-margin: 24px;
-border-radius: 12px;
-position: fixed;
-z-index: 500;
-width: 100%;
-top: 0;
-left: 50%;
-transform: translateX(-50%);
+	/*border: 1px solid #000;*/
+	height: 64px;
+    max-width:1200px;
+	background-color: rgba(0,0,0,0.5);
+    margin: 12px 24px;
+    border-radius: 12px;
+	position: fixed;
+	z-index: 500;
+	width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
 }
 .navbar .brand{
 	display: inline-block;
@@ -398,7 +399,7 @@ transform: translateX(-50%);
 	/*border: 1px solid #000;*/
 	padding-top: 80px;
 	padding-bottom: 80px;
-/* 	background-image: url('../images/bg/hero_banner.png'); */
+	/* background-image: url('../images/bg/hero_banner.png'); */
 	background-size: cover;
 	background-attachment: fixed;
 }
