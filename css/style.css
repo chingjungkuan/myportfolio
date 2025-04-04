@@ -205,6 +205,7 @@ a{
 
 /* image container */
 .image-container{
+    border-radius: 20px;
 	width: 100%;
 	/*border: 1px solid #000;*/
 }
@@ -215,6 +216,7 @@ a{
 	padding-top: 75%;
 }
 .image-container .image{
+	border-radius: 20px;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -227,7 +229,7 @@ a{
 
 /* mask-dark */
 .mask-dark{
-	background-color: rgba(0,0,0,0.7);
+	background-color: #957853;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -237,8 +239,8 @@ a{
 
 /* hero */
 .hero{
-	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 	/*border: 1px solid #000;*/
 }
 @media screen and (max-width: 768px){
@@ -303,7 +305,36 @@ a{
 .navbar .nav .nav-link:hover{
 	color: #185ADB;
 }
+
+@media screen and (max-width: 992px){
+	.navbar {
+		max-width: 768px;
+		width: 100%;
+		margin: 12px;
+		/* position: fixed; 可選，讓 navbar 固定在畫面頂部 */
+		
+		
+	}
+
+	.navbar .container{
+		max-width: 800px;
+		
+	}
+}
+
+
 @media screen and (max-width: 768px){
+	.navbar {
+		width: 100%;
+		margin: 12px;
+		/* position: fixed; 可選，讓 navbar 固定在畫面頂部 */
+	
+	}
+	.navbar .container{
+		max-width: 768px;
+		width: 100%;
+		
+	}
 	.navbar .nav{
 		position: fixed;
 		left: 0;
@@ -396,7 +427,6 @@ a{
 
 /* jumbotron */
 .jumbotron{
-	/*border: 1px solid #000;*/
 	padding-top: 80px;
 	padding-bottom: 80px;
 	/* background-image: url('../images/bg/hero_banner.png'); */
@@ -405,8 +435,8 @@ a{
 }
 @media screen and (max-width: 768px){
 	.jumbotron{
-		max-height: 100px;
-		padding-top: 144px;
+		max-height: 320px;
+		padding-top: 80px;
 		padding-bottom: 80px;
 	}
 }
@@ -450,9 +480,10 @@ a{
 
 /* UIUX 標籤（粉色，靠左） */
 .tag-uiux {
+	z-index: 200;
     background-color: #e6007e;
     top: 20%;
-    left: 30%;
+    left: 24%;
 }
 .tag-uiux::after {
     border-width: 6px 6px 6px 0;
@@ -464,6 +495,7 @@ a{
 
 /* Creativity 標籤（橘色，靠左） */
 .tag-creativity {
+	z-index: 200;
     background-color: #f89b29;
     bottom: 30%;
     left: 30%;
@@ -478,9 +510,10 @@ a{
 
 /* Graphic Design 標籤（藍色，靠右） */
 .tag-design {
+	z-index: 200;
     background-color: #0033cc;
     bottom: 25%;
-    right: 24%;
+    right: 28%;
 }
 .tag-design::after {
     border-width: 6px 0 6px 6px;
@@ -489,27 +522,126 @@ a{
     left: -6px;
     transform: translateY(-50%) rotate(180deg);
 }
+  
 
 
-
-
-
-
-.jumbotron .logo-image{
+.jumbotron .logo-wrapper {
+	position: relative;
 	width: 320px;
 	height: 320px;
-	/*border: 1px solid #000;*/
+	margin: 0 auto;
+  }
+  
+.jumbotron .logo-glow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* width: 100%;
+	height: 100%; */
+	transform: scale(1.2);
+	filter: blur(50px);
+	background: linear-gradient(270deg, #ff790c60 , #f7d51367 );
+	background-size: 150% 150%;
+	animation: animateGlow 10s ease infinite;
+	border-radius: 50%;
+	z-index: 1;
+	/* position: relative; */
+  	width: 40vw;         /* 自動縮放，最大寬度為視窗 40% */
+  	max-width: 320px;    /* 避免太大 */
+  	aspect-ratio: 1 / 1; /* 讓高度等比例 */
+ 	 margin: 0 auto;
+  }
+  
+.jumbotron .logo-image {
+	width: 100%;
+	height: 100%;
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin: 0 auto;
+	position: relative;
+	z-index: 2;
 }
-@media screen and (max-width: 768px){
-	.jumbotron .logo-image{
-		width: 200px;
-		height: 200px;
+
+/* 發光動畫 */
+@keyframes animateGlow {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
 	}
 }
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  .jumbotron .logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+	width: 160px;
+    height: 160px;
+  }
+
+  .jumbotron .logo-wrapper .logo-glow,
+  .jumbotron .logo-wrapper .logo-image {
+    width: 160px;
+    height: 160px;
+    position: relative;
+  }
+
+  .jumbotron .logo-wrapper .logo-glow {
+    z-index: 1;
+    transform: scale(1.05);
+    filter: blur(12px);
+    background: linear-gradient(270deg, #ff790c60 , #f7d51367 );
+    background-size: 200% 200%;
+    animation: animateGlow 10s ease infinite;
+    border-radius: 50%;
+    position: absolute;  /* 還是需要絕對定位讓它在圖片下方 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.05); /* 中心對齊 + scale */
+  }
+
+  .jumbotron .logo-wrapper .logo-image {
+    z-index: 2;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+	/* tag-藍色 */
+	.jumbotron .tag-design {
+		z-index: 200;
+		bottom: 25%;
+		right: 3%;
+	}
+	/* 粉色 */
+	.tag-uiux {
+		z-index: 200;
+		top: 12%;
+		left: 1%;
+	}
+	.tag-creativity {
+		z-index: 200;
+		bottom: 10%;
+		left: 3%;
+	}
+} 
+
+
+
+
+
 /*.jumbotron .btn-group-center{
 	margin: 8px;
 }*/
@@ -760,7 +892,6 @@ a{
 
 /* footer */
 .footer{
-	background-image: url('../images/bg/104_portfolio_banner.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -769,12 +900,16 @@ a{
 .footer .brand{
 	display: block;
 	width: 240px;
-	height: 80px;
+	height: 36px;
 	margin: 0 auto;
 	background-image: url('../images/common/w_logo_name.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
+}
+
+.footer .hero{
+	padding: 40px;
 }
 @media screen and (max-width: 540px){
 	.footer .brand{
@@ -806,7 +941,7 @@ a{
 	color: #ccc;
 	text-align: center;
 	line-height: 24px;
-	padding: 16px 0;
+	padding: 4px 0;
 	font-size: 14px;
 }
 
