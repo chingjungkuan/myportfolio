@@ -69,6 +69,18 @@ a{
 	display: block;
 	clear: both;
 }
+.row-sm{
+	/*border: 1px solid blue;*/
+	margin-left: -16px;
+	margin-right: -16px;
+	margin-bottom: 12px;
+}
+.row-sm:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
 .row-high{
 	/*border: 1px solid blue;*/
 	margin-left: -16px;
