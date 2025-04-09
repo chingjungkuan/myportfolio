@@ -44,7 +44,10 @@ a{
 	text-decoration: none;
 	color: #191919;
 }
-
+.highlight {
+	color: #EB9164;
+	font-weight: bold;
+  }
 
 /* -------------------------- *\
 	Layout
@@ -253,6 +256,7 @@ a{
 	background-position: LEFT center;
 }
 
+
 /* mask-dark */
 .mask-dark{
 	background-color: #957853;
@@ -283,146 +287,92 @@ a{
 }
 
 /* navbar */
-.navbar{
-	/*border: 1px solid #000;*/
+.navbar {
 	height: 64px;
-    max-width:1200px;
-	background-color: rgba(0,0,0,0.5);
-    margin: 12px 24px;
-    border-radius: 12px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
 	position: fixed;
 	z-index: 500;
-	width: 100%;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    
-}
-.navbar .brand{
-	display: inline-block;
-	vertical-align: top;
-	/*border: 1px solid #000;*/
+	top: 0;
+	left: 0;
+	border-radius: 0 0 16px 16px; /* 移除 radius，貼齊上方 */
+  }
+  
+  /* 這裡是核心：控制內容不會貼邊 */
+  .navbar .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 24px; /* ✅ 這行最重要：保證左右 padding 不貼邊 */
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	align-items: center;
+  }
+  
+
+.navbar .brand {
 	width: 160px;
 	height: 64px;
 	background-image: url('../images/common/w_logo_name.svg');
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-
-	/*color: #fff;*/
-	white-space: nowrap;
 	text-indent: 100%;
 	overflow: hidden;
+	white-space: nowrap;
 }
-.navbar .nav{
-	float: right;
+
+.navbar .nav {
+	display: flex;
+	justify-self: end; 
 }
-.navbar .nav .nav-item{
-	float: left;
+
+.navbar .nav .nav-item {
+	list-style: none;
 }
-.navbar .nav .nav-link{
+
+.navbar .nav .nav-link {
 	display: block;
 	color: #fff;
 	line-height: 24px;
 	padding: 20px 16px;
-	/*border: 1px solid #fff;*/
 	transition: color 0.3s;
 }
-.navbar .nav .nav-link:hover{
-	color: #185ADB;
+
+.navbar .nav .nav-link:hover {
+	color: #fefefe;
 }
 
-@media screen and (max-width: 992px){
-	.navbar {
-		max-width: 768px;
-		width: 100%;
-		margin: 12px;
-		/* position: fixed; 可選，讓 navbar 固定在畫面頂部 */
-		
-		
-	}
-
-	.navbar .container{
-		max-width: 800px;
-		
-	}
-}
-
-
-@media screen and (max-width: 768px){
-	.navbar {
-		width: 100%;
-		margin: 12px;
-		/* position: fixed; 可選，讓 navbar 固定在畫面頂部 */
-	
-	}
-	.navbar .container{
-		max-width: 768px;
-		width: 100%;
-		
-	}
-	.navbar .nav{
-		position: fixed;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		background-color: #000;
-		z-index: 500;
-
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-
-		opacity: 0;
-		visibility: hidden;
-		transition: all 0.3s;
-	}
-	#popup-menu:target{
-		opacity: 1;
-		visibility: visible;
-	}
-	.navbar .nav .nav-link{
-		text-align: center;
-		padding: 16px;
-	}
-}
-
-/* menu-toggle */
-.navbar .menu-toggle{
+.navbar .menu-toggle {
 	width: 48px;
 	height: 48px;
-	/*border: 1px solid #fff;*/
-	float: right;
-	margin-top: 8px;
+	position: relative;
 	display: none;
+	justify-self: end;
 }
-@media screen and (max-width: 768px){
-	.navbar .menu-toggle{
-		display: inline-block;
-	}
-}
-.navbar .menu-toggle span{
+
+.navbar .menu-toggle span {
 	display: block;
 	width: 32px;
 	height: 2px;
-	background-color: #0040BD;
+	background-color: #fff;
 	position: absolute;
 	left: 50%;
-	transform: translate(-50%,0);
+	transform: translateX(-50%);
 }
-.navbar .menu-toggle span:nth-child(1){
+
+.navbar .menu-toggle span:nth-child(1) {
 	top: 12px;
 }
-.navbar .menu-toggle span:nth-child(2){
+
+.navbar .menu-toggle span:nth-child(2) {
 	top: 22px;
 }
-.navbar .menu-toggle span:nth-child(3){
+
+.navbar .menu-toggle span:nth-child(3) {
 	top: 32px;
 }
 
-/* close-btn */
-.navbar .close-btn{
+.navbar .close-btn {
 	display: none;
 	width: 48px;
 	height: 48px;
@@ -430,24 +380,65 @@ a{
 	right: 16px;
 	top: 8px;
 }
-@media screen and (max-width: 768px){
-	.navbar .close-btn{
-		display: block;
-	}
-}
-.navbar .close-btn span{
+
+.navbar .close-btn span {
 	width: 40px;
 	height: 2px;
+	background-color: #fff;
 	position: absolute;
-	background-color: #0040BD;
 	top: 50%;
 	left: 50%;
 }
-.navbar .close-btn span:nth-child(1){
-	transform: translate(-50%,-50%) rotate(45deg);
+
+.navbar .close-btn span:nth-child(1) {
+	transform: translate(-50%, -50%) rotate(45deg);
 }
-.navbar .close-btn span:nth-child(2){
-	transform: translate(-50%,-50%) rotate(-45deg);
+
+.navbar .close-btn span:nth-child(2) {
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 992px) {
+	.navbar .container {
+	  padding: 0 16px;
+	}
+  }
+@media screen and (max-width: 768px) {
+
+
+	.navbar .nav {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		min-height: 100vh; /* ✅ 保證包覆整個螢幕 */
+		background-color: #181818;
+		z-index: 500;
+		flex-direction: column;
+		justify-content: center;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease-in-out;
+	}
+
+	#popup-menu:target {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.navbar .nav .nav-link {
+		text-align: center;
+		padding: 16px;
+	}
+
+	.navbar .menu-toggle {
+		display: block;
+	}
+
+	.navbar .close-btn {
+		display: block;
+	}
 }
 
 
@@ -887,6 +878,37 @@ a{
 	line-height: 32px;
 	color: #333;
 }
+@media screen and (max-width: 992px) {
+	.contact .container .row {
+	  flex-direction: column; /* 垂直排列 */
+	  align-items: flex-start; /* 左對齊 */
+	  gap: 24px; /* 增加上下間距 */
+	}
+  
+	.contact .container .row .title {
+	  font-size: 36px;
+	}
+  
+	.contact .para {
+	  font-size: 16px;
+	  line-height: 1.6;
+	}
+  
+	.contact-info {
+	  width: 100%; /* 讓 contact-info 填滿寬度 */
+	}
+  
+	.info-item {
+	  flex-direction: column;
+	  align-items: flex-start;
+	  gap: 8px;
+	}
+  
+	.info-item .btn {
+	  margin-top: 8px;
+	}
+  }
+  
 /* ui-design */
 @media screen and (max-width: 768px){
 	.ui-design-preview{
