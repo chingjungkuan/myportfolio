@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/editor2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Paytone+One&family=Rowdies:wght@300;400;700&family=Rubik+Dirt&display=swap" rel="stylesheet">    
 </head>
 <body>
     <div class="wrapper">
@@ -39,18 +39,29 @@
 			</div>
 		</header>
 		<!-- End header -->
+    <!-- 浮動釘選導覽列 -->
+    <nav id="sub-nav" class="sub-nav">
+      <ul>
+        <li><a href="#flow,overview,pain-point,solution">前情提要</a></li>
+        <li><a href="#ia">資訊架構</a></li>
+        <li><a href="#ui-design,change,section-step01">UI Design</a></li>
+        <li><a href="#style-guide">Style Guide</a></li>
+        <li><a href="#takeaway">Takeaway</a></li>
+      </ul>
+    </nav>
 
-        <!-- Start main -->
+
+
+    <!-- Start main -->
         <section class="main">
-            <!-- Start banner -->
+          <!-- Start banner -->
             <section class="hero-banner"></section>
-
 			  
-			<!-- End banner -->
+			    <!-- End banner -->
             
 
             <!-- 開始設計流程 -->
-            <div id="flow" class="container fade-in scroll-container">
+            <div id="flow" class="hero-container fade-in scroll-container">
                 <h2>設計<br>流程</h2>
                 <div class="step">
                     <div class="number">1</div>
@@ -117,7 +128,7 @@
 
             <!-- Start Overview -->
             <div id="overview" class="hero hero-bg-white">
-                <div class="container">
+                <div class="hero-container">
                   <div class="overview">
                     <div class="overview-left">
                       <h2 class="title">概述 <span>Overview</span></h2>
@@ -145,14 +156,39 @@
               </div>
               
             <!-- End Overview -->
+            <!-- img2-txt1 痛點與觀察 -->
+            <div id="pain-point" class="img-txt hero-container hero-grid d-2col-1col">
+              <div class="image-block lightbox-trigger" style="background-image: url('../images/bg/new.png');"></div>
+ 
+              <div id="pain-point" class="hero-title">
+                <h2 class="title">痛點與觀察 <span>Pain Point & Task</span></h2>
+                <h3 class="title">舊版編輯器的問題</h3>
+                <p class="para">
+                  🚩 文字與按鈕間距擁擠<br>
+                  → 影響可讀性與點擊體驗<br>
 
-            <!-- Start 解決方案 txt1-img2-->
+                  🚩 功能操作不夠直覺<br>
+                  → 要按鈕不明顯，學習成本較高<br>
 
-            <div class="hero-container hero-grid m-1col-2col">
+                  🚩 缺乏現代 UI 設計元素<br>
+                  → 介面顯得過時、層次感不足<br>
+                  🚩 色彩對比過強，視覺壓迫感大<br>
+                  → 長時間使用容易疲勞<br>
+                  🚩 資訊架構混亂
+                  → 視線需要頻繁來回移動，增加操作負擔<br>
+                  🚩新增照片和找上傳的照片不直覺
+                  → 點擊「新增照片」後，使用者需跳轉至上傳頁面，再返回編輯器才能查看已上傳的照片。此外，照片池採左右切換，而非常見的下滑操作，可能增加學習成本。
+                </p>
+              </div>
+          </div>        
+          <!-- End img2-txt1 -->            
+
+            <!-- Start txt1-img2 解決方案 -->
+
+            <div  id="solution" class="hero-container hero-grid m-1col-2col">
                     
                 <div class="hero-title">
                 <h2 class="title">解決方案 <span>Solution</span></h2>
-                
                 <p class="para">
                     <li>資訊架構更直覺，視線動線更流暢 → 照片池統一放左側，減少視線移動</li>
                     <li>配色更現代、柔和且高級感提升 → 低飽和度色彩，減少視覺疲勞</li>
@@ -162,37 +198,81 @@
                 </div>
                 <div class="image-block" style="background-image: url('../images/bg/new.png');"></div>
             </div>
-            <div id="img-txt" class="hero-container hero-grid d-2col-1col">
-                <div class="image-block" style="background-image: url('../images/bg/new.png');"></div>
-   
-                <div class="hero-title">
-                    <h2 class="title">test案 <span>Solution</span></h2>
-                    <p class="para">
-                    <li>資訊架構更直覺，視線動線更流暢 → 照片池統一放左側，減少視線移動</li>
-                    <li>配色更現代、柔和且高級感提升 → 低飽和度色彩，減少視覺疲勞</li>
-                    <li>字體與間距優化 → 提升可讀性與點擊舒適度</li>
-                    <li>細節更精緻 → 圓角、陰影、視覺層次感增強</li>
-                    <li>功能設計更直覺，操作更流暢 → 按鈕與工具排列更有邏輯，減少學習成本</li>
-                    </div>
-            </div>        
-            <!-- End 解決方案 -->
-            <!-- 資訊架構 -->
-            <div id="center" class="container">
+            <!-- End txt1-img2 解決方案 -->
+            
+            <!-- Start 資訊架構 -->
+            <div id="ia" class="hero-container">
                 <div class="layout-center">
                     <h2 class="title">資訊架構 IA <span>Define</span></h2>
                     <div class="center-txt">在進行視覺設計與佈局前，我們先盤點現有功能，統整規格並解決不一致之處，建立規格文件與資訊架構。這可幫助團隊快速理解產品結構，加速開發決策。透過UI Flow 視覺化頁面路徑，確保產品體驗的一致性與流暢度。</div>
                 </div>
+
                 <div class="bottom">
                     <div class="image-block" style="background-image: url('../images/bg/new.png');"></div>
-
                 </div>
             </div>
 
+            <!-- Start txt1-img2 User flow -->
+
+            <div class="hero-container hero-grid m-1col-2col">
+                    
+                <div class="hero-title">
+                <h2 class="title">User Flow <span>Ideate</span></h2>
+                <h3 class="title">團隊合作 確立完整的使用者流程</h3>
+                <p class="para">
+                    在確定了專案的相關需求和目標之後，透過繪製 User Flow，確保團隊對於整體設計的一致理解。
+                    過程中也會不斷與工程師和產品經理進行討論和會議，以審視整體架構是否存在任何潛在問題或改進的空間，即時做修正。像是針對不同產品會有主要的功能，但針對特定的產品又會有一些特殊的功能，像是有些產品是可以將基本資訊的資料匯入進去作品，使用者不用自己手動再次輸入。
+                </div>
+                <div class="image-block" style="background-image: url('../images/bg/new.png');"></div>
+            </div>
+            <!-- End txt1-img2 user flow -->            
+            <!-- img2-txt1 -->
+            <div  class="img-txt hero-container hero-grid d-2col-1col">
+                <div class="image-block lightbox-trigger" style="background-image: url('../images/bg/new.png');"></div>
+   
+                <div class="hero-title">
+                    <h2 class="title">Wireframe <span>Wireframe</span></h2>
+                    <h3 class="title">從草圖到線框圖：建立清晰的介面架構</h3>
+                    <p class="para">
+                        完成整體的資訊架構後，我先快速在平板分區，並將想法透過線框且無色彩干擾的方式先在Figma上繪製線框圖，包括各個元件的佈局以及我們想要呈現給使用者的資訊。再把草圖透過 Figma 繪製更精確的線框圖，使其能與團隊成員討論的版本，確保一切都遵循我們的計劃後，才進行後續的視覺設計。
+                    </div>
+            </div>        
+            <!-- End img2-txt1 -->
+
+            <!-- Start UI Design 目前ui-design僅用於當標籤沒有css -->
+            <div  id="ui-design"   class=" hero-container">
+              <div class="layout-center display-title">UI Design </div>  
+            <div class="container">
+              <!-- Start txt1-img2 User flow -->
+              <div class="container">
+                  <div  class="notop-container hero-grid m-1col-2col">
+                          
+                    <div class="hero-title">
+                    <h2 class="title">設計風格進化 <span>Ideate</span></h2>
+                    
+                    <p class="para">
+                      <li>分層概念（Elevation & Layering）新版使用了卡片式設計，將內容明確區分（如左側照片池、編輯區），這與 Material Design 中的「分層」概念相符，讓使用者直覺理解資訊架構。</li>
+                      <li>簡化視覺（Minimal & Functional Aesthetic）新版配色更溫和、對比減少，視覺更舒服，這符合 Material Design 提倡的 「不過度裝飾、強調內容」 原則。</li>
+                      <li>清晰的點擊區域（Touchable & Readable）按鈕與點擊區域間距變大，可讀性提升，不容易誤點，這符合 Material Design 的「大面積觸控區域」概念，方便使用者操作。</li>
+                      <li>一致性與層次（Hierarchy & Consistency）標題、選單、圖像區塊明確，資訊層次感提升，這與 Material Design 強調的「一致性」原則相符，讓 UI 更直覺易懂。</li>
+                    </div>
+                    <div class="image-block lightbox-trigger" style="background-image: url('../images/bg/new.png');"></div>
+                  </div>
+                  <!-- End txt1-img2 user flow -->
 
 
+                  <!-- only img -->
+                  <div id="change" class="top-container">
+                      <img src="../images/bg/banner-desktop.jpg" alt="Banner" class="box-img">
+                  </div>
+              </div>   
+              
+
+
+            <!-- 測試 End lightbox -->
             <!-- Start 基本資料 -->
-            <div id="section-3" class="hero hero-bg-white">
-                <div class="hero-container">
+            <div id="section-step01" class="hero hero-bg-white">
+                <div class="top-container">
                   <!-- 標題區塊 -->
                   <div class="hero-title">
                     <h2 class="title">基本資料 <span>Step 01</span></h2>
@@ -217,9 +297,107 @@
               </div>
               
             <!-- End基本資料 -->
+            <!-- Start 套用主題 -->
+            <div id="section-step01" class="hero hero-bg-white">
+              <div class="top-container">
+                <!-- 標題區塊 -->
+                <div class="hero-title">
+                  <h2 class="title">套用主題 <span>Step 02</span></h2>
+                </div>
+            
+                <!-- 中間：圖片 + 描述 -->
+                <div class="hero-flex m-2col">
+                  <div class="image-manual" style="background-image: url('../images/bg/step.png');"></div> 
+                  <!-- manual表示比較彈性 -->
+                  <div class="description-text">
+                    <h3>輸入內容<span class="highlight">關聯性較高</span>列在一起</h3> <br>
+                    <p>【設計策略】<br>－步驟式的引導：首次創建作品的遞進引導，使用者可以清楚知道一步一步要怎麼編輯作品。<br>－重整資訊架構：將關聯性較高的分區，讓使用者可以依序填入對應內容。<br>－自動匯入：輸入的內容資料可自動匯入作品中。</p>
+                  </div>
+                </div>
+            
+                <!-- 底部兩張圖 -->
+                <div class="hero-grid m-1col">
+                  <div class="image-block" style="background-image: url('../images/bg/old.png');"></div>
+                  <div class="image-block" style="background-image: url('../images/bg/new.png');"></div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- End套用主題 -->
+          </div>
+        </div>
+        
+      <!-- Start Style-guide -->
+    <div id="style-guide" class="hero-container">
+      <div  class="layout-center display-title">Style Guide </div> 
+ 
+      <div class="container two-column-grid">
 
-        </section>
-        <!-- End main -->
+        <div class="item">
+        <h4 class="title"> 視覺層次更清晰，資訊組織更有條理</h4>
+        <p class="para">與使用者訪談時，我學習到不僅僅是詢問他們的需求，而是透過開放式問題引導，挖掘他們操作時的不便與真正的困擾。例如，部分用戶認為介面「不好用」，但透過深入詢問與觀察，發現問題其實是「照片管理方式過於分散，導致使用者需要頻繁切換視窗」。</p>
+        </div>
+        <div class="item">
+        <h4 class="title">如何建立清晰的資訊架構，讓內容有層次且易讀</h4>
+        <p class="para">在優化介面時，我深刻體會到資訊架構對使用者行為的影響。新版設計中，我統一了照片管理區域的位置，減少使用者視線來回移動的次數，並透過顏色與間距的調整，讓主要功能更顯眼，確保操作流程更順暢。</p>
+        </div>
+        <div class="item">
+        <h4 class="title">反思使用者操作行為，分析背後的設計問題</h4>
+        <p class="para">除了直觀的操作不順外，我也開始思考使用者為什麼會犯錯、為什麼某個步驟會被忽略。例如，舊版介面按鈕間距擁擠，導致誤點率高，而這並非用戶本身的錯誤，而是 UI 設計上的改進空間。這讓我更關注「減少認知負擔」與「提升操作直覺性」。</p>
+        </div>
+        <div class="item">
+        <h4 class="title">跨部門溝通與協作，提升效率並精準傳達設計思維</h4>
+        <p class="para">在與開發與產品團隊的合作中，我學會了如何用明確的邏輯表達設計需求，確保開發端能準確理解並實作。例如，當討論「拖拉照片排序」的功能時，我透過具體的流程圖與交互示意，讓團隊能快速對齊共識，減少來回調整的成本。</p>
+        </div>
+      </div>
+      <div class="top-container">
+        <img src="../images/bg/104_portfolio_banner.png" alt="Banner" class="box-img lightbox-trigger"> 
+
+      </div> 
+    </div>
+      <!-- Start Takeaway -->
+      
+      <div id="takeaway" class="hero-container">
+
+          <div class="layout-center">
+              <h2 class="title">Takeaways <span>Takeaways</span></h2>
+              <div class="center-txt">在這個專案中，我不僅應用了視覺設計與使用者體驗相關的技能，更深刻體會到 UX 設計不只是表面的佈局調整，而是從用戶角度出發，洞察他們可能遇到的痛點。例如，舊版介面存在資訊架構混亂、操作流程不直覺等問題，導致使用者需要頻繁來回確認內容，增加認知負擔。
+                因此，我透過重新設計照片管理區域、優化層次與配色，重整功能列的配置，讓使用者能更直覺地完成操作，減少學習成本，提高使用效率。</div>
+          </div>
+
+        <div class="two-column-grid">
+
+          <div class="item">
+          <h4 class="title">如何透過精準提問，挖掘用戶的真實需求與痛點</h4>
+          <p class="para">與使用者訪談時，我學習到不僅僅是詢問他們的需求，而是透過開放式問題引導，挖掘他們操作時的不便與真正的困擾。例如，部分用戶認為介面「不好用」，但透過深入詢問與觀察，發現問題其實是「照片管理方式過於分散，導致使用者需要頻繁切換視窗」。</p>
+          </div>
+          <div class="item">
+          <h4 class="title">如何建立清晰的資訊架構，讓內容有層次且易讀</h4>
+          <p class="para">在優化介面時，我深刻體會到資訊架構對使用者行為的影響。新版設計中，我統一了照片管理區域的位置，減少使用者視線來回移動的次數，並透過顏色與間距的調整，讓主要功能更顯眼，確保操作流程更順暢。</p>
+          </div>
+          <div class="item">
+          <h4 class="title">反思使用者操作行為，分析背後的設計問題</h4>
+          <p class="para">除了直觀的操作不順外，我也開始思考使用者為什麼會犯錯、為什麼某個步驟會被忽略。例如，舊版介面按鈕間距擁擠，導致誤點率高，而這並非用戶本身的錯誤，而是 UI 設計上的改進空間。這讓我更關注「減少認知負擔」與「提升操作直覺性」。</p>
+          </div>
+          <div class="item">
+          <h4 class="title">跨部門溝通與協作，提升效率並精準傳達設計思維</h4>
+          <p class="para">在與開發與產品團隊的合作中，我學會了如何用明確的邏輯表達設計需求，確保開發端能準確理解並實作。例如，當討論「拖拉照片排序」的功能時，我透過具體的流程圖與交互示意，讓團隊能快速對齊共識，減少來回調整的成本。</p>
+          </div>
+        </div>
+      </div>
+      <!-- End Takeaway -->      
+      <!-- Lightbox 元件 -->
+      <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+          <img id="lightbox-img" src="" alt="放大圖">
+      </div>     
+
+
+
+
+    </div>
+  </section>
+  <!-- End main -->
+
 
 		<!-- Start footer -->
 		<footer class="footer">
@@ -230,9 +408,6 @@
 					<ul class="nav">
 						<li class="nav-item">
 							<a href="#about" class="nav-link">ABOUT</a>
-						</li>
-						<li class="nav-item">
-							<a href="#services" class="nav-link">SKILL</a>
 						</li>
 
 						<li class="nav-item">
@@ -251,5 +426,112 @@
 		</footer>
 		<!-- End footer -->
     </div>
+
+    <!-- Start java -->
+    <script>
+      // 點擊 lightbox 圖片放大
+    
+    document.querySelectorAll('.lightbox-trigger').forEach(el => {
+      el.addEventListener('click', function () {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        // 情境一：<img src="...">
+        if (this.tagName.toLowerCase() === 'img') {
+          lightboxImg.src = this.src;
+        }
+        // 情境二：background-image style
+        else {
+          const style = window.getComputedStyle(this);
+          const bgImage = style.backgroundImage;
+          const match = bgImage.match(/url\(["']?(.*?)["']?\)/);
+          if (match && match[1]) {
+            lightboxImg.src = match[1];
+          }
+        }
+
+        lightbox.classList.add('active');
+      });
+    });
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+
+
+    
+      // 取得 sub-nav 和對應的內容區塊
+      const subNav = document.getElementById('sub-nav');
+      const designProcess = document.getElementById('flow');
+      const links = document.querySelectorAll('.sub-nav a');
+    
+      const sections = Array.from(links).map(link => {
+        const ids = link.getAttribute('href').replace('#', '').split(',');
+        const targets = ids.map(id => document.getElementById(id.trim())).filter(Boolean);
+        return { link, targets };
+      });
+    
+      // 點擊 a 時：移除 active、加到點擊的項目、滾動到第一個對應區塊
+      links.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          links.forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+    
+          const firstId = this.getAttribute('href').replace('#', '').split(',')[0].trim();
+          const firstTarget = document.getElementById(firstId);
+          if (firstTarget) {
+            window.scrollTo({
+              top: firstTarget.offsetTop - 80,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    
+      // 當頁面滾動時
+      window.addEventListener('scroll', () => {
+        // 讓 sub-nav 浮動
+        const designProcessTop = designProcess.getBoundingClientRect().top;
+        subNav.classList.toggle('active', designProcessTop <= 0);
+    
+        const scrollY = window.scrollY;
+        const viewportMiddle = scrollY + window.innerHeight / 2;
+    
+        let found = false;
+    
+        sections.forEach(({ link, targets }) => {
+          let active = false;
+    
+          targets.forEach(section => {
+            const top = section.offsetTop;
+            const bottom = top + section.offsetHeight;
+    
+            if (viewportMiddle >= top && viewportMiddle < bottom) {
+              active = true;
+            }
+          });
+    
+          if (active) {
+            link.classList.add('active');
+            found = true;
+          } else {
+            link.classList.remove('active');
+          }
+        });
+    
+        // 如果滾到底部，強制亮最後一個
+        if (!found && window.innerHeight + scrollY >= document.body.offsetHeight) {
+          sections.forEach(({ link }, idx) => {
+            if (idx === sections.length - 1) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          });
+        }
+      });
+    </script>
+    
 </body>
 </html>
