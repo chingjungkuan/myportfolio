@@ -29,19 +29,43 @@ html,body{
 	font-family: '微軟正黑體', arial;
 	
 }
+/* 連動的 google font */
 .anton-regular {
 	font-family: "Anton", sans-serif;
 	font-weight: 400;
 	font-style: normal;
   }
+.cal-sans-regular {
+font-family: "Cal Sans", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+.archivo-black-regular {
+	font-family: "Archivo Black", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+.rubik-dirt-regular {
+font-family: "Rubik Dirt", system-ui;
+font-weight: 400;
+font-style: normal;
+}
+   
   
 h1,h2,h3,h4,h5,h6,p{
 	margin: 0;
 }
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 16px;
+	color: #191919;
+  }
 h2 {
 	font-size: 28px;
 	font-weight: bold;
 	margin-bottom: 16px;
+	color: #191919;
   }
 h2.title span {
 	font-size: 18px;
@@ -49,11 +73,26 @@ h2.title span {
 	color: gray;
 	margin-left: 12px;
   }
+
+h3 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 16px;
+	color: #191919;
+  }
+h4 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 16px;
+	color: #191919;
+  }
 h5{
 	font-size:16px;
+	color: #191919;
 }
 h6{
 	font-size:14px;
+	color: #191919;
 }
 ul{
 	margin: 0;
@@ -78,20 +117,34 @@ li{
 	line-height: 150%;
 	color: #181818;
 }
+.display-title{
+	font-family: "Rubik Dirt", sans-serif;
+	font-size: 64px;
+	color: #625043;
+	
+}
+@media screen and (max-width: 768px){
+	.display-title{
+		font-size: 48px;
+	}
 
+}
 
 /* -------------------------- *\
 	Layout
 \* -------------------------- */
 /* grid system */
+/* 暫時把container定義為沒有padding的，且他沒有gap */
+
 .container{
 	max-width: 1152px;
 	width: 100%;
 	/*border: 1px solid #000;*/
 	margin: 0 auto;
-	padding-top: 100px;
-	padding-left: 16px;
-	padding-right: 16px;
+	/* padding-top: 100px; */
+	/* padding-left: 16px;
+	padding-right: 16px; */
+	
 }
 .row{
 	/*border: 1px solid blue;*/
@@ -171,62 +224,70 @@ li{
 .hero-title{
 	order: 2;
 	flex: 1;
+
 }
   
-  .hero-title h2.title {
-	font-size: 28px;
-	font-weight: bold;
-	margin-bottom: 16px;
-  }
-  .hero-title h2.title span {
-	font-size: 18px;
-	font-weight: normal;
-	color: gray;
-	margin-left: 12px;
-  }
-  
-  .hero-grid {
-	display: grid;
-	gap: 24px;
-	align-items: center;
-  }
-  
-  .hero-flex{
-	display: flex;
-	flex-direction: row;
-	gap: 24px;
-  }
-  .hero-flex.m-2col {
-	display: flex;
-	flex-direction: row;
-	gap: 24px;
-	align-items: flex-start;
-	flex-wrap: nowrap; /* 不要換行 */
-  }
-  
+.hero-title h2.title {
+font-size: 28px;
+font-weight: bold;
+margin-bottom: 24px;
+}
+.hero-title h3.title {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 16px;
 
-  
-  .description-text {
-	flex: 1;                /* 填滿剩下的寬度 */
-	font-size: 14px;
-	line-height: 1.5;
-	color: #181818;
-	order: 1;
-  }
-  .description-text h3 {
-	font-size: 24px;
-	margin-bottom: 12px;
-  }
-  .description-text .highlight {
-	color: #EB9164;
-	font-weight: bold;
-  }
-  .description-text p {
-	font-size: 14px;
-	line-height: 1.5;
-	color: #181818;
-  }
-  
+}
+
+.hero-title h2.title span {
+font-size: 18px;
+font-weight: normal;
+color: gray;
+margin-left: 12px;
+}
+
+.hero-grid {
+display: grid;
+gap: 24px;
+align-items: center;
+}
+
+.hero-flex{
+display: flex;
+flex-direction: row;
+gap: 24px;
+}
+.hero-flex.m-2col {
+display: flex;
+flex-direction: row;
+gap: 24px;
+align-items: flex-start;
+flex-wrap: nowrap; /* 不要換行 */
+}
+
+
+
+.description-text {
+flex: 1;                /* 填滿剩下的寬度 */
+font-size: 14px;
+line-height: 1.5;
+color: #181818;
+order: 1;
+}
+.description-text h3 {
+font-size: 24px;
+margin-bottom: 12px;
+}
+.description-text .highlight {
+color: #EB9164;
+font-weight: bold;
+}
+.description-text p {
+font-size: 14px;
+line-height: 1.5;
+color: #181818;
+}
+
 @media screen and (max-width: 768px) {
 	.hero-grid.m-2col {
 		grid-template-columns: 1fr;
@@ -294,7 +355,38 @@ li{
   }
 
 }
+/* 全部文字的 */
+.two-column-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* 一列2個 */
+	column-gap: 96px; /* 水平間距 */
+	row-gap: 24px;    /* 垂直間距 */
+  }
+  
+  .two-column-grid .item {
+	background: #f9f9f9;
+	padding: 24px;
+	border-radius: 4px;
+	display: flex;
+  	flex-direction: column;
+  	gap: 12px; /* 這行就是讓 h3 和 p 中間有 12px */
+  }
+  
+  /* 手機版（小於等於768px時） */
+  @media (max-width: 768px) {
+	.two-column-grid {
+	  grid-template-columns: 1fr; /* 手機版變成一列1個 */
+	  column-gap: 0; /* 手機版就不需要左右間距 */
+	}
 
+	.two-column-grid .item {
+	
+		padding: 16px;
+	
+	  }
+  }
+  
+  
 
 
 /* -------------------------- *\
@@ -401,18 +493,28 @@ li{
   }
 
 .image-manual {
-	background-size: contain; /* ✅ 改成 contain */
+	background-size: contain;
 	background-position: left;
 	background-repeat: no-repeat;
 
-	height: 200px; /* 自訂你要的高 */
+	height: 200px; /* 自訂想要的高 */
 	width: auto;
 	max-width: 120px;
 	aspect-ratio: 4 / 3;
 	flex-shrink: 0;
 	border-radius: 12px;
   }
-
+/* 填滿容器的圖片 */
+  .box-img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+@media (max-width: 768px) {
+#change .box-img {
+	  content: url('../images/bg/banner-mobile.jpg');
+	}
+  }
 /* mask-dark */
 .mask-dark{
 	background-color: rgb(149, 120, 83);
@@ -450,11 +552,34 @@ li{
 
 	}
   }
+/* lightbox  */
+.lightbox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 999;
+  }
   
+  .lightbox.active {
+	display: flex;
+  }
+  
+  .lightbox img {
+	max-width: 90%;
+	max-height: 90%;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(255,255,255,0.3);
+	transition: transform 0.3s ease;
+  } 
 
 
-
-/* hero */
+/* hero  */
 
 .hero.hero-bg-white{
 	background-color: #fefefe;
@@ -462,24 +587,50 @@ li{
 .hero.hero-bg-grey{
 	background-color: #efefef;
 }
-
   
 .hero-container {
 	max-width: 1152px;
 	margin: 0 auto;
-	padding: 100px 16px;
+	padding: 100px 16px 0px 16px;
 	display: grid;
 	gap: 24px;
 }
 @media screen and (max-width: 768px){
 	.hero-container{
-		padding-top: 80px;
+		padding: 80px 16px 0px 16px;
 		
 	}
 	.container{
-		padding-top: 80px;
+		padding-top: 0px;
 	}
 }
+/* 沒有top的container 且用grid */
+.notop-container {
+	max-width: 1152px;
+	margin: 0 auto;
+	padding: 0 16px;
+	display: grid;
+	gap: 24px;
+}
+.top-container{
+	max-width: 1152px;
+	margin: 0 auto;
+	padding: 80px 16px 0 16px;
+	display: grid;
+	gap: 24px;
+}
+@media screen and (max-width: 768px){
+	.notop-container{
+		padding: 0px;
+	}
+	.top-container{
+		padding: 80px 0 0 0;
+	
+	}
+	
+}
+
+
 /* navbar */
 .navbar {
 	height: 64px;
@@ -671,6 +822,53 @@ li{
 		height: 200px;
 	}
 }
+/* 測試丁選導覽列 */
+.sub-nav {
+	
+	display: none; /* 預設不出現 */
+	position: fixed;
+	top: 200px;
+	width: auto;
+	height: auto;
+	background: white;
+	z-index: 999;
+	border-radius: 0 4px 4px 0;
+	box-shadow: 0 4px 12px rgba(115, 115, 115, 0.1);
+  }
+  
+  .sub-nav ul {
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	justify-content: center;
+	gap: 24px;
+	list-style: none;
+	margin: 0;
+	padding: 12px;
+
+  }
+  
+  .sub-nav li a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	font-size: 12px;
+  }
+  
+  .page-content {
+	padding: 40px 16px;
+  }
+  .sub-nav li a.active {
+	color: #007bff; /* 例：高亮藍色 */
+	border-bottom: 2px solid #007bff; /* 或加底線強調 */
+  }
+  .sub-nav.active {
+	display: block; /* 出現 */
+  }
+
+
+/* 丁選導覽列結束 */
+
 /* 設計流程 */
 #flow{
 	display: flex;
@@ -688,13 +886,16 @@ li{
 	min-width: 120px;
 	max-width: 100%;
 }
-
+.step p{
+	font-size: 12px;
+}
+/* 加入某個google font */
 .number {
-	font-family: "Anton", sans-serif;
+	font-family: "Rubik Dirt", sans-serif;
 	line-height: 100%;
     font-size: 60px;
     color: #E4DEDA;
-    margin-bottom: -20px;
+    margin-bottom: -16px;
 }
 
 .box {
@@ -925,20 +1126,20 @@ li{
 
 
 /* Layout img-txt */
-#img-txt .hero-title{
+.img-txt .hero-title{
 	order:2;
 }
 
-#img-txt .image-block{
+.img-txt .image-block{
 	order:1;
 }
 
 @media screen and (max-width: 768px){
-	#img-txt .hero-title{
+	.img-txt .hero-title{
 		order:1;
 	}
 	
-	#img-txt .image-block{
+	.img-txt .image-block{
 		order:2;
 	}
 }
@@ -946,11 +1147,13 @@ li{
 /* 資訊架構 */
 
 .layout-center{
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 12px;
-	align-self: stretch;
 	margin-bottom: 24px;
 }
 .center-txt{
@@ -967,13 +1170,13 @@ li{
 
 
 /* 基本資料 */
-#section-3 .hero-title{
+#section-step01 .hero-title{
 	order:1;
 }
-#section-3 .hero-flex {
+#section-step01 .hero-flex {
 	order:2;
 }
-#section-3 .hero-grid {
+#section-step01 .hero-grid {
 	order:3;
 }
 
@@ -981,11 +1184,16 @@ li{
 
 
 /* footer */
+
 .footer{
+	margin-top: 80px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+}
+.footer .container{
+	padding-top: 0px;
 }
 .footer .brand{
 	display: block;
