@@ -68,9 +68,9 @@ h2 {
 	color: #191919;
   }
 h2.title span {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: normal;
-	color: gray;
+	color: #666;
 	margin-left: 12px;
   }
 
@@ -123,6 +123,19 @@ li{
 	color: #625043;
 	
 }
+
+.description-text span{
+	font-size: 16px;
+	font-weight: normal;
+	color: #666;
+}
+
+.hero-title span{
+	font-size: 16px;
+	font-weight: normal;
+	color: #666;
+	margin-bottom: 12px;
+}
 @media screen and (max-width: 768px){
 	.display-title{
 		font-size: 48px;
@@ -139,8 +152,8 @@ li{
 .container{
 	max-width: 1152px;
 	width: 100%;
-	/*border: 1px solid #000;*/
 	margin: 0 auto;
+	/*border: 1px solid #000;*/
 	/* padding-top: 100px; */
 	/* padding-left: 16px;
 	padding-right: 16px; */
@@ -224,32 +237,32 @@ li{
 .hero-title{
 	order: 2;
 	flex: 1;
-
 }
   
 .hero-title h2.title {
-font-size: 28px;
-font-weight: bold;
-margin-bottom: 24px;
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 24px;
 }
 .hero-title h3.title {
-font-size: 20px;
-font-weight: bold;
-margin-bottom: 16px;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 16px;
+	line-height: 1.5;
 
 }
 
 .hero-title h2.title span {
-font-size: 18px;
-font-weight: normal;
-color: gray;
-margin-left: 12px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #666;
+	margin-left: 12px;
 }
 
 .hero-grid {
-display: grid;
-gap: 24px;
-align-items: center;
+	display: grid;
+	gap: 24px;
+	align-items: center;
 }
 
 .hero-flex{
@@ -279,8 +292,9 @@ font-size: 24px;
 margin-bottom: 12px;
 }
 .description-text .highlight {
-color: #EB9164;
-font-weight: bold;
+	font-size: 24px;
+	color: #EB9164;
+	font-weight: bold;
 }
 .description-text p {
 font-size: 14px;
@@ -553,6 +567,7 @@ color: #181818;
 	}
   }
 /* lightbox  */
+
 .lightbox {
 	position: fixed;
 	top: 0;
@@ -836,7 +851,7 @@ color: #181818;
 	box-shadow: 0 4px 12px rgba(115, 115, 115, 0.1);
   }
   
-  .sub-nav ul {
+.sub-nav ul {
 	display: flex;
 	flex-direction: column;
 	align-content: flex-start;
@@ -846,28 +861,31 @@ color: #181818;
 	margin: 0;
 	padding: 12px;
 
-  }
-  
-  .sub-nav li a {
+}
+
+.sub-nav li a {
 	text-decoration: none;
 	color: #333;
 	font-weight: bold;
 	font-size: 12px;
-  }
-  
-  .page-content {
+}
+
+.page-content {
 	padding: 40px 16px;
-  }
-  .sub-nav li a.active {
+}
+.sub-nav li a.active {
 	color: #007bff; /* 例：高亮藍色 */
 	border-bottom: 2px solid #007bff; /* 或加底線強調 */
-  }
-  .sub-nav.active {
+}
+.sub-nav.active {
 	display: block; /* 出現 */
-  }
+}
+@media (max-width: 768px) {
+	.sub-nav {
+	  display: none;
+	}
+}
 
-
-/* 丁選導覽列結束 */
 
 /* 設計流程 */
 #flow{
@@ -969,8 +987,7 @@ color: #181818;
   }
   
 .overview-left h3 {
-	font-size: 20px;
-	margin-top: 10px;
+	font-size: 24px;
   }
   
 .overview-left p {
