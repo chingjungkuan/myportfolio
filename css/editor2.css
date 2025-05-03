@@ -97,7 +97,8 @@ h6{
 ul{
 	margin: 0;
 	padding: 0;
-	list-style: none;
+	list-style: disc;        /* 顯示圓點 */
+	padding-left: 1.5em;     /* 加一些內縮，讓圓點出現 */
 }
 a{
 	text-decoration: none;
@@ -266,16 +267,16 @@ li{
 }
 
 .hero-flex{
-display: flex;
-flex-direction: row;
-gap: 24px;
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
 }
 .hero-flex.m-2col {
-display: flex;
-flex-direction: row;
-gap: 24px;
-align-items: flex-start;
-flex-wrap: nowrap; /* 不要換行 */
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	align-items: flex-start;
+	flex-wrap: nowrap; /* 不要換行 */
 }
 
 
@@ -317,27 +318,28 @@ color: #181818;
 	  }
 	.description-text,
   	.image-block {
-    order: unset;
-  	}
+		order: unset;
+		}
 	.hero-grid {
-    flex-direction: column; /* 改為直向排列 */
-  	}
-  	.image-block {
-    order: 2; /* 圖片放下面 */
-  	}
-  	.hero-title {
-    order: 1; /* 文字放上面 */
-  	}
+		flex-direction: column; /* 改為直向排列 */
+		}
+	.image-block {
+		order: 2; /* 圖片放下面 */
+		}
+	.hero-title {
+		order: 1; /* 文字放上面 */
+	}
 
   	.hero-grid {
-    flex-direction: column; /* 改為直向排列 */
+		flex-direction: column; /* 改為直向排列 */
+		}
+	.image-block {
+		order: 2; /* 圖片放下面 */
+		}
+	.hero-title {
+		order: 1; /* 文字放上面 */
   	}
-  	.image-block {
-    order: 2; /* 圖片放下面 */
-  	}
-  	.hero-title {
-    order: 1; /* 文字放上面 */
-  }
+
 	  
 }
 .hero-grid.m-1col {
@@ -542,7 +544,7 @@ color: #181818;
 .hero-banner {
 	width: 100%;
 	height: 640px;
-	background-image: url('../images/bg/banner-desktop.jpg');
+	background-image: url('../images/bg/banner-desktop.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
