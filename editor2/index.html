@@ -42,7 +42,7 @@
     <!-- 浮動釘選導覽列 -->
     <nav id="sub-nav" class="sub-nav">
       <ul>
-        <li><a href="#impact,flow,overview,pain-point,solution">前情提要</a></li>
+        <li><a href="#impact,overview,flow,pain-point,solution">前情提要</a></li>
         <li><a href="#ia">資訊架構</a></li>
         <li><a href="#ui-design,section-step01">UI Design</a></li>
         <li><a href="#style-guide">Style Guide</a></li>
@@ -58,7 +58,7 @@
             <section class="hero-banner"></section>
 			  
 			    <!-- End banner -->
-          <!-- Start Takeaway -->
+          <!-- Start Design Impact -->
                 
           <div id="impact" class="hero-container">
 
@@ -135,8 +135,38 @@
 
           </div>
           </div>
-          <!-- End Takeaway --> 
+          <!-- End Design Impact--> 
 
+          <!-- Start Overview -->
+            <div id="overview" class="hero hero-bg-white">
+              <div class="hero-container">
+                <div class="overview">
+                  <div class="overview-left">
+                    <h2 class="title">概述 <span>Overview</span></h2>
+                    <h3 class="title">Editor2 - 相片書線上編輯器</h3>
+                    <p class="para">#B2C #SaaS #POD（客製化印刷服務）#RWD Website</p>
+                    <p class="para">
+                      點點印會員用戶可透過 Editor2 這個線上編輯器製作點點印的產品（像是相片書、卡片、邀請卡、婚禮書約、精裝寫真本...等）。
+                    </p>
+                    <div class="team-info">
+                      <p class="para"><strong>Team |</strong> TinTint 點點印</p>
+                      <p class="para"><strong>Role |</strong> 🧑🏻‍💻 UIUX Designer</p>
+                      <p class="para"><strong>Collaborators |</strong> UIUX Designer(1)・PM(1)・FE(1)・BE(1)・CS(1)</p>
+                    </div>
+                  </div>
+                  <div class="overview-right">
+                    <p class="para">
+                      作為 UI/UX 設計師，我透過使用者訪談、競品分析與觀察，深入了解目標用戶的需求與行為模式。我建立了 Personas、Empathy Map、User Story Maps，整理使用者的心理模型，並透過與 CS 關隊的討論，分析過去的使用者回饋，確保設計方向貼合實際需求。
+                    </p><br>
+                    <p class="para">
+                      在定案階段，我根據研究結果整合客群與架構與使用流程，並與產品經理確認細節後，開始構建 Wireframe、UI Flow 和設計系統。接著，我參與原型測試與用戶測驗，確保最終設計能有效解決用戶的痛點，並順利推動開發進程。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          <!-- End Overview -->
             <!-- 開始設計流程 -->
             <div id="flow" class="hero-container fade-in scroll-container">
                 <h2>設計<br>流程</h2>
@@ -203,43 +233,13 @@
             </div>
             <!-- 設計流程結束 -->
 
-            <!-- Start Overview -->
-            <div id="overview" class="hero hero-bg-white">
-                <div class="hero-container">
-                  <div class="overview">
-                    <div class="overview-left">
-                      <h2 class="title">概述 <span>Overview</span></h2>
-                      <h3 class="title">Editor2 - 相片書線上編輯器</h3>
-                      <p class="para">#B2C #SaaS #POD（客製化印刷服務）#RWD Website</p>
-                      <p class="para">
-                        點點印會員用戶可透過 Editor2 這個線上編輯器製作點點印的產品（像是相片書、卡片、邀請卡、婚禮書約、精裝寫真本...等）。
-                      </p>
-                      <div class="team-info">
-                        <p class="para"><strong>Team |</strong> TinTint 點點印</p>
-                        <p class="para"><strong>Role |</strong> 🧑🏻‍💻 UIUX Designer</p>
-                        <p class="para"><strong>Collaborators |</strong> UIUX Designer(1)・PM(1)・FE(1)・BE(1)・CS(1)</p>
-                      </div>
-                    </div>
-                    <div class="overview-right">
-                      <p class="para">
-                        作為 UI/UX 設計師，我透過使用者訪談、競品分析與觀察，深入了解目標用戶的需求與行為模式。我建立了 Personas、Empathy Map、User Story Maps，整理使用者的心理模型，並透過與 CS 關隊的討論，分析過去的使用者回饋，確保設計方向貼合實際需求。
-                      </p><br>
-                      <p class="para">
-                        在定案階段，我根據研究結果整合客群與架構與使用流程，並與產品經理確認細節後，開始構建 Wireframe、UI Flow 和設計系統。接著，我參與原型測試與用戶測驗，確保最終設計能有效解決用戶的痛點，並順利推動開發進程。
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-            <!-- End Overview -->
             <!-- img2-txt1 痛點與觀察 -->
             <div id="pain-point" class="img-txt hero-container hero-grid d-2col-1col">
               <div class="image-block lightbox-trigger" style="background-image: url('../images/editor2/img_pain-point.jpg');"></div>
  
               <div class="hero-title">
                 <h2 class="title">痛點與觀察 <span>Pain Point & Task</span></h2>
-                <h3 class="title">舊版編輯器的問題</h3>
+                <h3 class="title">舊版編輯器的與挑戰</h3>
                 <p class="para">
                   🚩 文字與按鈕間距擁擠<br>
                   → 影響可讀性與點擊體驗<br>
@@ -257,21 +257,29 @@
                   → 點擊「新增照片」後，使用者需跳轉至上傳頁面，再返回編輯器才能查看已上傳的照片。此外，照片池採左右切換，而非常見的下滑操作，可能增加學習成本。
                 </p>
               </div>
+
           </div>        
-          <!-- End img2-txt1 -->            
+          <!-- End img2-txt1 -->    
+          <div class="hero-container">
+            <p class="para" >
+              我們發現使用者在操作過程中，會發生 難以快速找到資訊、學習成本高、流程不夠直覺 等問題。為了釐清問題，我們結合 Personas、Empathy Map 和 User Story Map 聚焦核心需求，並透過用戶訪談與實際操作觀察驗證假設。根據分析結果，我們優化介面與核心功能，降低認知負擔、提升流暢度，讓使用者能更輕鬆完成任務、快速上手。
+            </p>
+          </div>        
 
           <!-- Start txt1-img2 解決方案 -->
 
             <div  id="solution" class="hero-container hero-grid m-1col-2col">
                     
                 <div class="hero-title">
-                <h2 class="title">解決方案 <span>Solution</span></h2>
+                <h2 class="title">設計優化重點 <span>Solution</span></h2>
+
                 <p class="para">
-                    <li>資訊架構更直覺，視線動線更流暢 → 照片池統一放左側，減少視線移動</li>
-                    <li>配色更現代、柔和且高級感提升 → 低飽和度色彩，減少視覺疲勞</li>
-                    <li>字體與間距優化 → 提升可讀性與點擊舒適度</li>
-                    <li>細節更精緻 → 圓角、陰影、視覺層次感增強</li>
-                    <li>功能設計更直覺，操作更流暢 → 按鈕與工具排列更有邏輯，減少學習成本</li>
+                  為了解決上述問題，我重新規劃了操作流程與介面結構，讓整體體驗更直覺、清晰、舒適：<br>
+                    <li>統一操作區塊位置：將照片池固定於左側，並整合編輯工具列，減少視線與操作的跳轉</li>
+                    <li>優化照片新增流程：使用者可直接於編輯區上傳與替換照片，流程更簡潔</li>
+                    <li>重整按鈕與工具排列邏輯：依使用場景分類，提升操作直覺性</li>
+                    <li>提升視覺一致性與精緻度：使用低飽和色系、加強層次感（圓角、陰影等），打造更現代的介面風格</li>
+                    <li>調整字體與元件間距：改善閱讀與點擊體驗，提升整體易用性</li>
                 </div>
                 <div class="image-block" style="background-image: url('../images/editor2/img_solution.jpg');"></div>
             </div>
@@ -388,7 +396,7 @@
                 <br>－輸入已知資訊，系統自動匯入：
                 <br>引導使用者先輸入自己已知的內容，系統會自動將資訊匯入，讓使用者在進入編輯畫面時，無需逐一點擊輸入框新增或更新資訊，大幅提升操作效率。
               </div>
-              <div class="image-block" style="background-image: url('../images/bg/new.png');"></div>
+              <div class="image-block" style="background-image: url('../images/editor2/img_ui-design-step1-2.jpg');"></div>
           </div>
             <!-- End txt1-img2 基本資料02-->  
             <!-- End基本資料 -->
@@ -465,14 +473,10 @@
                 </div>
               </div>
           
-              <!-- 底部兩張圖
-                  <div  class="top-container">
-                      <img src="../images/editor2/img_ui-design02.jpg" alt="Banner" class="box-img">
-                  </div> -->
             </div>
             <div  class="notop-container">
               <img src="../images/editor2/img_ui-design-step3.jpg" alt="Banner" class="box-img">
-          </div>
+            </div>
           </div>
 
           <!-- Start txt1-img2 -->
@@ -526,7 +530,7 @@
           
           </div>
           <!-- End img2-txt1 -->
-          <!-- Start txt1-img2 -->
+          <!-- Start txt1-img2 tooltips -->
 
           <div  id="" class="top-container hero-grid m-1col-2col">
                     
@@ -543,13 +547,27 @@
             <div class="image-block" style="background-image: url('../images/editor2/img_tooltips01.jpg');"></div>
             <div class="image-block" style="background-image: url('../images/editor2/img_tooltips02.jpg');"></div>
           </div>
-          <!-- End txt1-img2 -->
+          <!-- End txt1-img2 tooltips -->
+           <!-- Start 文字框 -->
+          <div  id="" class="top-container hero-grid m-1col-2col">
+                    
+            <div class="description-text">
+            <span>-編輯內容</span>
+            <h3 class="title">重整 Toolbar 和 Modal 元件</h3>
+            <p class="para">
+              【設計策略】
+              －統一各類 Toolbar（如文字框、QRCode、相片框等）與 Modal 元件的視覺風格，提升整體介面一致性。
+              －新增雙擊文字框後的進階編輯 Modal，讓使用者能在同一視窗中同時調整文字內容、顏色、對齊方式與字型等，補足原本僅能透過單擊設定的操作，提升使用彈性與效率。
+            </div>
+            <div class="image-block" style="background-image: url('../images/editor2/img_toolbar-modal.jpg');"></div>
+          </div>
+          <!-- end 文字框-->
           <!-- start 上傳照片 -->
           <div id="section-step01" class="hero hero-bg-white">
             <div class="top-container">
               <!-- 標題區塊 -->
               <div class="hero-title">
-                <h2 class="title">上傳照片 <span>Upload Image</span></h2>
+                <h2 class="title">上傳照片 <span>Step 03</span></h2>
               </div>
           
               <!-- 中間：圖片 + 描述 -->
@@ -558,40 +576,42 @@
                 <!-- manual表示比較彈性 -->
                 <div class="description-text">
                   <span>-編輯內容</span>
-                  <h3>整併進去編輯內容畫面<span class="highlight"></span></h3> <br>
-                  <p>【設計策略】<br>－固定位置，減少視覺搜尋成本
-                    2.0 左側邊欄提供固定區域來存放照片，不像圖一分散於底部，使用者可以更快找到並管理照片。
-                    統一的設計讓用戶不需要反覆移動視線，有助於提高操作流暢度。
-                  <br>使畫面聚焦在「下一步：編輯內容」，移除原本的「繼續編輯」及 Header 中的「完稿並購買」，統一至編輯內容頁面後才能進行最終確認與購買，提高操作一致性與流暢度。<br>
-                  －照片瀏覽更清晰直觀
-                  左側直列排列可顯示較多照片，減少左右滑動操作，提高檢視效率。
-                  可於同畫面了解照片上傳進度。
-                  在較小的螢幕（如筆電）上，側邊欄比底部欄位更節省空間，保持版面整潔。</p>
+                  <h3>整併進去編輯內容畫面</h3>
+                  <ul class="para">
+                    【設計策略】<br>
+                    －固定位置，減少視覺搜尋成本<br>
+                      
+                    <li>2.0 左側邊欄提供固定區域來存放照片，不像圖一分散於底部，使用者可以更快找到並管理照片。</li>
+                    <li>統一的設計讓用戶不需要反覆移動視線，有助於提高操作流暢度。</li><br>
+                    <b>－照片瀏覽更清晰直觀</b>
+                    <li>左側直列排列可顯示較多照片，減少左右滑動操作，提高檢視效率。</li>
+                    <li>可於同畫面了解照片上傳進度。</li>
+                    <li>在較小的螢幕（如筆電）上，側邊欄比底部欄位更節省空間，保持版面整潔。</li>
+                  </ul>
+                  
                 </div>
               </div>
           
-              <!-- 底部兩張圖 -->
-              <div class="hero-grid m-1col">
-                <div class="image-block" style="background-image: url('../images/bg/old.png');"></div>
-                <div class="image-block" style="background-image: url('../images/bg/new.png');"></div>
-              </div>
-              <!-- End底部兩張圖 -->
+            </div>
+            <div  class="notop-container">
+              <img src="../images/editor2/img_ui-design_upload-img.jpg" alt="Banner" class="box-img">
             </div>
           </div>
-          <!-- Start txt1-img2 -->
-
+          <!-- End 上傳照片 -->
           <div  id="" class="top-container hero-grid m-1col-2col">
                     
             <div class="description-text">
             <span>-編輯內容</span>
-            <h3 class="title">提高排版靈活性與可擴充性 </h3>
+            <h3 class="title">照片池提高排版彈性與可擴充性</h3>
             <p class="para">
               －更多操作空間<br>
-              左側邊欄可以容納更多選項，如「照片分類」、「搜尋」、「篩選」，未來擴充功能時更方便，而底部空間相對受限。<br>
-              －適合不同裝置 (RWD 友善)<br>
-              在較窄的裝置上（如平板），左側照片池可以更方便展開與收起，而底部照片池可能會擋住重要編輯區域。</p>
+            
+              新版將照片池從底部移至左側欄，並新增「照片排序」、「篩選已使用照片」、「多選刪除」等功能，操作更集中、流程更順暢。相較於舊版底部空間有限，左側欄也更利於未來功能擴充與彈性配置。
+              －點擊側邊懶得選項按鈕可作收合 增加空間
+              舊版的介面，將照片池放置於底部可能會擋住重要編輯區域。
+              優化後將左側欄可展開／收合，避免遮擋主要編輯區，使用者可依需求調整空間，針對小螢幕裝置，操作更靈活、不干擾編輯視線。
             </div>
-            <div class="image-block" style="background-image: url('../images/bg/new.png');"></div>
+            <div class="image-block" style="background-image: url('../images/editor2/img_upload-img02.jpg');"></div>
           </div>
           <!-- End txt1-img2 -->
            <!-- Satrt img2-txt1 -->
@@ -599,7 +619,7 @@
             <div class="image-block lightbox-trigger" style="background-image: url('../images/bg/new.png');"></div>
 
             <div class="hero-title">
-                <span>-編輯內容</span>
+                <span>-整體</span>
                 <h3 class="title">強化操作流程的直覺性</h3>
                 <p class="para">
                   拖放 (Drag & Drop) 更自然
@@ -608,9 +628,24 @@
                   在圖一，底部照片池與編輯區不在同一視線範圍內，用戶可能需要頻繁移動鼠標與視線；圖二的側邊欄解決了這個問題，讓照片管理與編輯區域更緊密相關。
                 </p>
                 </div>
+
           
           </div>
-          <!-- End img2-txt1 --> 
+          <!-- End img2-txt1 -->
+          <div  id="" class="top-container hero-grid m-1col-2col">
+                
+            <div class="description-text">
+            <span>-整體</span>
+            <h3 class="title">全面優化響應式編輯體驗</h3>
+            <p class="para">
+              為解決舊版編輯器在手機與平板裝置上操作不便的問題，我們將響應式友善性列為優化重點。
+              舊版存在按鈕大小不一、介面擁擠、操作邏輯混亂等問題，導致使用者在小螢幕上容易誤觸、找不到功能、甚至需要頻繁縮放才能完成任務，操作體驗大打折扣。
+              因此針對各裝置進行重新設計，調整按鈕尺寸與間距、優化功能分組邏輯、增加平板斷點，並考量使用者的手勢操作習慣，讓整體介面更貼合不同螢幕，提供一致且流暢的跨裝置操作體驗。
+            </p>
+            </div>
+            <div class="image-block" style="background-image: url('../images/editor2/img_rwd.jpg');"></div>
+          </div>
+          <!-- End txt1-img2 --> 
           <!-- End 編輯內容 -->
         </div>
         <!-- End ui design container -->
@@ -796,7 +831,7 @@
     
       // 取得 sub-nav 和對應的內容區塊
       const subNav = document.getElementById('sub-nav');
-      const designProcess = document.getElementById('flow');
+      const designProcess = document.getElementById('overview');
       const links = document.querySelectorAll('.sub-nav a');
     
       const sections = Array.from(links).map(link => {
