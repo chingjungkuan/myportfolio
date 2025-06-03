@@ -551,7 +551,7 @@ a{
 	height: 100%; */
 	transform: scale(1.2);
 	filter: blur(50px);
-	background: linear-gradient(270deg, #DBE7FE99 , #F7FAFF99 );
+	background: linear-gradient(270deg, #DBE7FE20 , #F7FAFF60 );
 	background-size: 150% 150%;
 	animation: animateGlow 10s ease infinite;
 	border-radius: 50%;
