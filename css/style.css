@@ -912,7 +912,7 @@ a{
 /* ui-design */
 @media screen and (max-width: 768px){
 	.ui-design-preview{
-		margin-bottom: 48px;
+		margin-bottom: 12px;
 	}
 }
 .ui-design-preview .title{
