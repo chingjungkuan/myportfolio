@@ -65,7 +65,6 @@ a{
 	/*border: 1px solid blue;*/
 	margin-left: -16px;
 	margin-right: -16px;
-	margin-bottom: 36px;
 }
 .row:after{
 	content: '';
