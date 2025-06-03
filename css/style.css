@@ -702,7 +702,6 @@ a{
 .section-intro .title{
 	font-size: 48px;
 	color: #333;
-	margin-bottom: 24px;
 }
 @media screen and (max-width: 768px){
 	.section-intro .title{
