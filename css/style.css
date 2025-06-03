@@ -690,10 +690,7 @@ a{
 }
 
 /* section-intro */
-.section-intro{
-	text-align: left;
-	margin-bottom: 40px;
-}
+
 .section-intro .title{
 	font-size: 48px;
 	color: #333;
@@ -703,6 +700,10 @@ a{
 	.section-intro .title{
 		font-size: 32px;
 	}
+	.section-intro{
+		text-align: left;
+		margin-bottom: 12px;
+}
 }
 .section-intro .para{
 	text-align: left;
