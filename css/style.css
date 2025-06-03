@@ -253,7 +253,7 @@ a{
 
 /* mask-dark */
 .mask-dark{
-	background-color: #957853;
+	background-color: #185ADB;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -551,7 +551,7 @@ a{
 	height: 100%; */
 	transform: scale(1.2);
 	filter: blur(50px);
-	background: linear-gradient(270deg, #ff790c60 , #f7d51367 );
+	background: linear-gradient(270deg, #DBE7FE99 , #F7FAFF99 );
 	background-size: 150% 150%;
 	animation: animateGlow 10s ease infinite;
 	border-radius: 50%;
