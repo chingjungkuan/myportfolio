@@ -375,7 +375,7 @@ color: #181818;
 .two-column-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr); /* 一列2個 */
-	column-gap: 96px; /* 水平間距 */
+	column-gap: 24px; /* 水平間距 */
 	row-gap: 24px;    /* 垂直間距 */
   }
   
