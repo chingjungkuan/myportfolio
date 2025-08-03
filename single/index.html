@@ -6,7 +6,7 @@
     <title>關靖蓉 Lucy Kuan</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="../css/single.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Paytone+One&family=Rowdies:wght@300;400;700&family=Rubik+Dirt&display=swap" rel="stylesheet">    
@@ -115,10 +115,7 @@
                     <h3 class="title primarycolor-title">Single  -  輕量作品編輯器</h3>
                     <p class="para">#B2C  #SaaS  #POD（客製化印刷服務） #RWD  Website</p>
                     <p class="para">
-                      在優化 Single 編輯器的專案中，我發現使用者常在響應式裝置上卡關，主要是介面缺乏明確的操作引導，讓人難以順利開始編輯，許多用戶因此在初期就放棄。
-                      我整合用戶回饋與競品分析，建立 Personas 和 Empathy Map，並與 CS 團隊釐清回報背後的真正需求。多數使用者並非抗拒編輯，而是不知道從哪開始、該怎麼做才對。
-                      根據這些洞察，我調整資訊架構、簡化選項，設計出「任務導向」的分階段流程，讓使用者能專注一件事、一步步完成作品，降低中途離開的可能。
-                      在流程設計與原型測試期間，我與 PM 密切合作，釐清各節點的功能與進入條件。最終新流程成功讓棄單率下降 25%。這次經驗也讓我更有意識地在設計中維持「操作上的明確感」，幫助使用者更有信心完成任務。
+                      產品服務｜可快速製作的產品會讓用戶使用 Single 編輯器，快速完成一本簡單的作品，與 Editor2 定位較不同。
                     </p>
                     <div class="team-info">
                       <p class="para"><strong>Team |</strong> TinTint 點點印</p>
@@ -128,10 +125,12 @@
                   </div>
                   <div class="overview-right">
                     <p class="para">
-                      [調整背景]為統一整體網站的設計風格，並簡化舊版中不必要的頁面和資訊，先針對整體資訊架構進行盤點與梳理，移除重複或多餘內容，聚焦呈現使用者真正需要的資訊。
+                      在優化 Single 編輯器的專案中，我發現使用者常在響應式裝置上卡關，主要是介面缺乏明確的操作引導，讓人難以順利開始編輯，許多用戶因此在初期就放棄。我整合用戶回饋與競品分析，建立 Personas 和 Empathy Map，並與 CS 團隊釐清回報背後的真正需求。多數使用者並非抗拒編輯，而是不知道從哪開始、該怎麼做才對。
+                      
                     </p><br>
                     <p class="para">
-                      在整理過程中發現「作品列表」的操作流程不夠直覺，使用者常需多層點擊才能完成任務。經與團隊夥伴討論後，決定重新設計該區塊，同時全面對齊設計系統 2.0 的樣式與規範，提升整體體驗一致性與操作效率。
+                      根據這些洞察，我調整資訊架構、簡化選項，設計出「任務導向」的分階段流程，讓使用者能專注一件事、一步步完成作品，降低中途離開的可能。
+                      在流程設計與原型測試期間，我與 PM 密切合作，釐清各節點的功能與進入條件。最終新流程成功讓棄單率下降 25%。這次經驗也讓我更有意識地在設計中維持「操作上的明確感」，幫助使用者更有信心完成任務。
                     </p>
                   </div>
                 </div>
@@ -205,60 +204,50 @@
             <!-- 設計流程結束 -->
 
             <!-- img2-txt1 痛點與觀察 -->
-            <div id="pain-point" class="hero-container">
- 
+            <div id="pain-point" class="img-txt hero-container hero-grid d-2col-1col">
+              <div class="image-block lightbox-trigger" style="background-image: url('../images/editor2/img_pain-point.jpg');"></div>
+
               <div class="hero-title">
                 <h2 class="title">痛點與觀察 <span>Pain Point & Task</span></h2>
-                  <div class="container two-column-grid">
-
-                    <div class="item">
-                    <h4 class="title">🗯️ 資訊層級混亂，重點不易辨識</h4>
-                    <p class="para">
-                      - 資訊列表的文字缺乏層級差異，所有資訊呈現方式相似，難以一眼抓到關鍵內容。<br>
-                      - 顯示過多「次要資訊（如圖片數量、檔案大小）」，反而分散注意力，使用者需額外花時間篩選重要資訊。
-                    </div>
-                    <div class="item">
-                    <h4 class="title">🗯️ 操作路徑繁瑣，效率低落</h4>
-                    <p class="para">
-                      - 缺乏明確的「主要動作（如「繼續編輯」）」指引，使用者需進入詳細頁才能操作，流程冗長。<br>
-                      - 操作選項如「複製」、「刪除」需進入下一層畫面才能執行，對有大量作品的使用者來說操作成本高。
-                    </p>
-                    </div>
-                    <div class="item">
-                    <h4 class="title">🗯️ 介面佈局擁擠，視覺負擔大</h4>
-                    <p class="para">
-                    - 作品卡片圖片比例過大，垂直排列導致資訊密集、空間使用不佳。<br>
-                    - 卡片切割區塊過多、缺乏留白與視覺節奏，使使用者在瀏覽時感到壓迫與混亂。
-                    </p>
-                    </div>
-                    <div class="item">
-                    <h4 class="title">🗯️ 行動指引不清，主次不分明</h4>
-                    <p class="para">
-                     -「繼續編輯」、「作品欣賞」等行動按鈕樣式不夠明顯，容易與周圍資訊混淆。<br>
-                     - 行動區缺乏層次感與視覺突出效果，重要操作按鈕位置偏下且需捲動，易被忽略。
-                    </p>
-                    </div>
-                  </div>
-
+                <h3 class="title">舊版的問題</h3>
+                <p class="para">
+                  🔺過度依賴上下滾動<br>
+                  需頻繁滑動才能切換功能，讓使用者難以快速找到所需選項，降低操作效率。<br>
+                 🔺編輯區與選項分離<br>
+                  預覽畫面與操作選項分離，使用者需來回滾動確認效果，操作不夠直覺。<br>
+                 🔺關聯操作分散各處<br>
+                 像「新增」、「選物件」、「加雕刻」在上方，照片池與新增按鈕卻藏在下方，導致操作流程斷裂、學習成本高。<br>
+                 🔺預覽體驗不穩定<br>
+                  滾動切換功能時，作品位置容易偏移和抖動，干擾細節調整與即時預覽。<br>
+                 🔺行動裝置操作負擔大<br>
+                  手機螢幕小，加上需要多次點擊與滑動，增加操作難度。<br>
+                 🔺資訊層級不清<br>
+                 樣式、顏色、雕刻等選項未明確區分，容易讓使用者搞不清楚目前編輯狀態。
+                </p>
               </div>
 
-          </div>        
-          <!-- End img2-txt1 -->          
+            </div>        
+            <!-- End img2-txt1 -->              
 
           <!-- Start txt1-img2 設計優化重點 -->
 
             <div  id="solution" class="hero-container hero-grid m-1col-2col">
                     
                 <div class="hero-title">
-                <h2 class="title">設計優化重點 <span>Solution</span></h2>
+                  <h2 class="title">設計優化重點 <span>Solution</span></h2>
 
-                <p class="para">
-                  雖然本次專案未進行大規模問卷與訪談，我們仍透過使用數據、客服回饋及競品觀察，歸納出使用者在作品操作流程中常遇到的問題，並以此作為設計優化的切入點。<br>
-                  為進一步釐清方向，我分析多個業界競品的作品管理介面，整理其操作邏輯與版面結構的優劣，歸納出共通的使用行為與設計模式。<br><br>
-
-                  根據這些洞察，重新規劃資訊架構與操作動線，聚焦提升使用效率與資訊清晰度，優化整體體驗。
+                  <ul class="para">
+                  為了解決上述問題，我重新規劃了操作流程與介面結構，讓整體體驗更清晰舒適：<br>
+                  <li>統一操作區塊位置：將照片池固定於左側，並整合編輯工具列，減少視線與操作的跳轉。</li>
+                  <li> 優化照片新增流程：使用者可直接於編輯區上傳與替換照片，流程更簡潔。</li>
+                  <li>重整按鈕與工具排列邏輯：依使用場景分類，提升操作直覺性。</li>
+                  <li>提升視覺一致性與精緻度：使用低飽和色系、加強層次感（圓角、陰影等），打造更現代的介面風格。</li>
+                  <li>調整字體與元件間距：改善閱讀與點擊體驗，提升整體易用性。</li>
+                  
+                  </ul>
                 </div>
                 <div class="image-block lightbox-trigger" style="background-image: url('../images/project/img_solution.jpg');"></div>
+                
             </div>
           <!-- End txt1-img2 設計優化重點 -->
             
@@ -266,7 +255,7 @@
             <div id="ia" class="hero-container">
                 <div class="layout-center">
                     <h2 class="title">資訊架構 IA <span>Define</span></h2>
-                    <div class="center-txt">為了讓產品在擴充功能或優化介面時具備一致且清晰的結構，先對現有功能進行全面盤點，釐清現行設計中可能存在的重複、混亂或規格不一致問題。接著將功能邏輯整理為資訊架構與規格文件，幫助團隊更快速理解整體產品脈絡與使用者操作邏輯。</div>
+                    <div class="center-txt">先盤點現有功能，統整規格並解決不一致之處，建立規格文件與資訊架構。同時讓團隊成員快速理解產品結構，加速開發決策。</div>
                 </div>
 
                 <div  class="notop-container">
@@ -280,10 +269,10 @@
                     
                 <div class="hero-title">
                 <h2 class="title">User Flow <span>Ideate</span></h2>
-                <h3 class="title">讓流程問題具象化的第一步</h3>
+                <h3 class="title">精簡操作流程，重新梳理編輯體驗</h3>
                 <p class="para">
-                為了釐清實際操作流程與潛在阻礙，我繪製 UI Flow 視覺化頁面路徑和層級。在舊版中執行如「繼續編輯」等操作需多次點擊，流程繁瑣。<br><br>
-                UI Flow 協助團隊辨識操作層級過深或按鈕位置不明等問題，進而優化介面結構。也同步根據實際操作路徑，調整資訊架構，使畫面層級更清晰、使用流程更直覺。
+                  當專案目標明確後，我從使用者角度出發，盤點現有編輯流程中的操作痛點與介面問題，列出需要優化的功能項目，例如：將「儲存」與「進階編輯」收合至 Header 精簡操作視覺，或重新評估「變換產品」功能在 Single 編輯器中的優先順序，以聚焦使用者最常進行的核心操作。<br><br>
+                  針對這些調整，逐步重構主要操作流程，並延伸繪製各功能的使用路徑圖，協助團隊更清楚掌握全貌。每個版本都會與團隊夥伴反覆討論，根據回饋持續優化，最終收斂出貼近實際使用情境且技術可行的設計方案。
                 </p>
                 </div>
                 <div class="image-block" style="background-image: url('../images/project/img_user-flow.jpg');"></div>
@@ -311,28 +300,64 @@
             <div class="container">
               <!-- Start txt1-img2 User flow -->
               <div class="container">
-                  <div  class="notop-container hero-grid m-1col-2col">
+                  <div  class="layout-center">
                           
                     <div class="hero-title">
-                    <h2 class="title">統一新版設計風格 <span>Ideate</span></h2>
+                    <h2 class="title center-txt">新版｜視覺風格簡約清楚且統一</h2>
                     
-                    <ul class="para">
-                      <li><b>風格更貼近品牌個性</b><br>新版介面採用<b>柔和配色</b>與<b>簡約排版</b>，傳遞溫暖、小清新的品牌氣質，營造親和、舒適的使用氛圍。</li><br>
-                      <li><b>分層概念性</b><br>新版使用了卡片式設計，將內容明確區分（如左側側邊欄、作品列表區），與 Material Design 中的「分層」概念相符，讓使用者直覺理解資訊架構。</li><br>
-                      <li><b>簡化視覺</b><br>新版配色更溫和、對比減少，視覺更舒服，符合 Material Design 提倡的 「不過度裝飾、強調內容」 原則。</li><br>
-                      <li><b>一致性與層次</b><br>標題、選單、圖像區塊明確，資訊層次感提升讓 UI 更直覺易懂。</li><br>
-                      
-                    </ul>
                     </div>
-                    <div class="image-block lightbox-trigger" style="background-image: url('../images/project/img_ui-design01.jpg');"></div>
                   </div>
                   <!-- End txt1-img2 user flow -->
+                  <div class="container two-column-grid">
+
+                    <div class="item">
+                      <h4 class="title">📌界面層次更清晰</h4>
+                        <ul class="para">
+                          <li>[舊版] 選單、按鈕、編輯區域的界線不夠明確，使用者可能需要花時間理解操作區域與編輯內容的關係。</li>
+                          <li>[新版] 固定的編輯區塊、統一的按鈕樣式，讓功能層級更清晰，操作更直覺。</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                      <h4 class="title">📌界面層次更清晰</h4>
+                        <ul class="para">
+                          <li>[舊版] 選單、按鈕、編輯區域的界線不夠明確，使用者可能需要花時間理解操作區域與編輯內容的關係。</li>
+                          <li>[新版] 固定的編輯區塊、統一的按鈕樣式，讓功能層級更清晰，操作更直覺。</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                      <h4 class="title">📌界面層次更清晰</h4>
+                        <ul class="para">
+                          <li>[舊版] 選單、按鈕、編輯區域的界線不夠明確，使用者可能需要花時間理解操作區域與編輯內容的關係。</li>
+                          <li>[新版] 固定的編輯區塊、統一的按鈕樣式，讓功能層級更清晰，操作更直覺。</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                      <h4 class="title">📌界面層次更清晰</h4>
+                        <ul class="para">
+                          <li>[舊版] 選單、按鈕、編輯區域的界線不夠明確，使用者可能需要花時間理解操作區域與編輯內容的關係。</li>
+                          <li>[新版] 固定的編輯區塊、統一的按鈕樣式，讓功能層級更清晰，操作更直覺。</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                      <h4 class="title">📌界面層次更清晰</h4>
+                        <ul class="para">
+                          <li>[舊版] 選單、按鈕、編輯區域的界線不夠明確，使用者可能需要花時間理解操作區域與編輯內容的關係。</li>
+                          <li>[新版] 固定的編輯區塊、統一的按鈕樣式，讓功能層級更清晰，操作更直覺。</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                      <h4 class="title">📌界面層次更清晰</h4>
+                        <ul class="para">
+                          <li>[舊版] 選單、按鈕、編輯區域的界線不夠明確，使用者可能需要花時間理解操作區域與編輯內容的關係。</li>
+                          <li>[新版] 固定的編輯區塊、統一的按鈕樣式，讓功能層級更清晰，操作更直覺。</li>
+                        </ul>
+                    </div>
 
 
-                  <!-- only img 作品列表繁瑣 -->
-                <div  class="top-container">
-                  <img src="../images/project/img_ui-design02.jpg" alt="input" class="box-img lightbox-trigger">
-                </div>
+
+                  </div>
+
+
 
               </div>   
 
