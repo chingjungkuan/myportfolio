@@ -1313,7 +1313,6 @@ color: #181818;
 @media screen and (max-width: 540px) {
   .footer-brand {
     width: 200px;
-    height: 200px;
   }
 
   .footer-link {
