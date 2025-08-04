@@ -1029,7 +1029,6 @@ a{
 @media screen and (max-width: 540px) {
   .footer-brand {
     width: 200px;
-    height: 200px;
   }
 
   .footer-link {
@@ -1060,3 +1059,4 @@ a{
 		display: none;
 	}
 }
+
