@@ -1252,63 +1252,84 @@ color: #181818;
 
 /* footer */
 
-.footer{
-	margin-top: 80px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-}
-.footer .container{
-	padding-top: 0px;
-}
-.footer .brand{
-	display: block;
-	width: 240px;
-	height: 36px;
-	margin: 0 auto;
-	background-image: url('../images/common/w_logo_name.svg');
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
+.footer {
+  margin-top: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fefefe;
 }
 
-.footer .hero{
-	padding: 40px;
+.footer-hero {
+  position: relative;
+  padding: 40px 20px;
 }
-@media screen and (max-width: 540px){
-	.footer .brand{
-		width: 200px;
-		height: 200px;
-	}
+
+.footer .mask-dark {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
 }
-.footer .nav{
-	display: flex;
-	justify-content: center;
+
+.footer .container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
-.footer .nav .nav-link{
-	color: #fefefe;
-	display: block;
-	padding: 24px;
-	line-height: 24px;
-	transition: all 0.3s;
+
+.footer-brand {
+  display: block;
+  width: 240px;
+  height: 36px;
+  background-image: url('../images/common/w_logo_name.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
-.footer .nav .nav-link:hover{
-	color: #0040BD;
+
+.footer-nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-@media screen and (max-width: 540px){
-	.footer .nav .nav-link{
-		padding: 24px 8px;
-	}
+
+.footer-link {
+  color: #fefefe;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: color 0.3s;
 }
-.footer .copyright{
-	background-color: rgba(0,0,0,0.8);
-	color: #ccc;
-	text-align: center;
-	line-height: 24px;
-	padding: 4px 0;
-	font-size: 14px;
+
+.footer-link:hover {
+  color: #0040BD;
 }
+
+@media screen and (max-width: 540px) {
+  .footer-brand {
+    width: 200px;
+    height: 200px;
+  }
+
+  .footer-link {
+    padding: 8px;
+  }
+}
+
+.footer-copyright {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ccc;
+  text-align: center;
+  font-size: 14px;
+  padding: 4px 0;
+  line-height: 24px;
+}
+
 
 /* -------------------------- *\
 	Utility
