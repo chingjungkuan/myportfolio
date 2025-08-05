@@ -106,7 +106,7 @@ a{
 li{
 	font-size: 14px;
 	line-height: 150%;
-	color: #181818;
+	color: #191919;
 }
 .highlight {
 	color: #EB9164;
@@ -115,7 +115,7 @@ li{
 .para{
 	font-size: 14px;
 	line-height: 150%;
-	color: #181818;
+	color: #191919;
 }
 .display-title{
 	font-family: "Rubik Dirt", sans-serif;
@@ -185,58 +185,6 @@ li{
 	clear: both;
 }
 
-.col-lg-6,.col-lg-4,.col-lg-3,.col-lg-12,
-.col-md-6,.col-md-4,.col-md-3,.col-md-12,
-.col-sm-6,.col-sm-4,.col-sm-3,.col-sm-12{
-	/*border: 1px solid red;*/
-	float: left;
-	padding-left: 16px;
-	padding-right: 16px;
-}
-.col-lg-3{
-	width: 25%;
-}
-.col-lg-4{
-	width: 33.3333333%;
-}
-.col-lg-6{
-	width: 50%;
-}
-.col-lg-8{
-	width: 66.6666667%;
-}
-.col-lg-12{
-	width: 100%;
-}
-@media screen and (max-width: 768px){
-	.col-md-3{
-		width: 25%;
-	}
-	.col-md-4{
-		width: 33.3333333%;
-	}
-	.col-md-6{
-		width: 50%;
-	}
-	.col-md-12{
-		width: 100%;
-	}
-}
-@media screen and (max-width: 540px){
-	.col-sm-3{
-		width: 25%;
-	}
-	.col-sm-4{
-		width: 33.3333333%;
-	}
-	.col-sm-6{
-		width: 50%;
-	}
-	.col-sm-12{
-		width: 100%;
-	}
-}
-
 .hero-title{
 	order: 2;
 	flex: 1;
@@ -287,7 +235,7 @@ li{
 flex: 1;                /* 填滿剩下的寬度 */
 font-size: 14px;
 line-height: 1.5;
-color: #181818;
+color:#191919 ;
 order: 1;
 }
 .description-text h3 {
@@ -302,7 +250,7 @@ margin-bottom: 12px;
 .description-text p {
 font-size: 14px;
 line-height: 1.5;
-color: #181818;
+color: #191919;
 }
 
 @media screen and (max-width: 768px) {
@@ -381,17 +329,23 @@ color: #181818;
 	row-gap: 24px;    /* 垂直間距 */
   }
   
-  .two-column-grid .item {
-	background: #f9f9f9;
-	padding: 24px;
-	border-radius: 4px;
+.two-column-grid .item {
+background: #f9f9f9;
+padding: 24px;
+border-radius: 4px;
+display: flex;
+flex-direction: column;
+gap: 12px; /* 這行就是讓 h3 和 p 中間有 12px */
+}
+
+.two-column-grid .item-nobg {
+
 	display: flex;
   	flex-direction: column;
-  	gap: 12px; /* 這行就是讓 h3 和 p 中間有 12px */
-  }
-  
+  	gap: 12px;
+}
   /* 手機版（小於等於768px時） */
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
 	.two-column-grid {
 	  grid-template-columns: 1fr; /* 手機版變成一列1個 */
 	  column-gap: 0; /* 手機版就不需要左右間距 */
@@ -400,7 +354,7 @@ color: #181818;
 	.two-column-grid .item {
 	
 		padding: 16px;
-	
+
 	  }
   }
 /* grid 一列三個 */
@@ -824,7 +778,7 @@ color: #181818;
 		top: 0;
 		width: 100%;
 		min-height: 100vh; /* ✅ 保證包覆整個螢幕 */
-		background-color: #181818;
+		background-color:#191919;
 		z-index: 500;
 		flex-direction: column;
 		justify-content: center;
@@ -916,7 +870,7 @@ color: #181818;
 
 .sub-nav li a {
 	text-decoration: none;
-	color: #333;
+	color: #191919;
 	font-weight: bold;
 	font-size: 12px;
 }
@@ -969,7 +923,7 @@ color: #181818;
 
 .box {
     background-color: #fff;
-    color: #181818;
+    color: #191919;
     font-size: 14px;
     line-height: 1.5;
 }
@@ -996,7 +950,7 @@ color: #181818;
 	}
 .scroll-container .title{
 		font-size: 24px;
-		color: #333;
+		color: #191919;
 		margin-bottom: 24px;
 		margin-top: 40px;
 		padding: 10px;
@@ -1062,48 +1016,13 @@ color: #181818;
 	  grid-template-columns: 1fr;
 	}
 	.overview-left h2 {
-		color: #181818;
+		color: #191919;
 		margin-bottom: 24px;
 		font-weight: bold;
 	  }
 
 
   }
-
-
-
-/* about-preview */
-@media screen and (max-width: 768px){
-	.about-preview{
-		margin-bottom: 48px;
-	}
-}
-.about-preview .title{
-	font-size: 32px;
-	color: #333;
-	margin-bottom: 24px;
-	margin-top: 40px;
-}
-
-
-@media screen and (max-width: 960px){
-	.about-preview .title{
-		margin-top: 0px;
-	}
-}
-.about-preview .subtitle{
-	font-size: 24px;
-	color: #185ADB;
-
-}
-.about-preview .para{
-	font-size: 14px;
-	line-height: 24px;
-	text-align: left;
-	color: #181818;
-	margin-bottom: 24px;
-}
-
 
 
 /* section-intro */
@@ -1113,7 +1032,7 @@ color: #181818;
 }
 .section-intro .title{
 	font-size: 48px;
-	color: #333;
+	color: #191919;
 	margin-bottom: 24px;
 }
 @media screen and (max-width: 768px){
@@ -1125,7 +1044,7 @@ color: #181818;
 	text-align: left;
 	font-size: 14px;
 	line-height: 21px;
-	color: #333;
+	color: #191919;
 	max-width: 480px;
 	margin: 0 0;
 }
@@ -1224,7 +1143,7 @@ color: #181818;
 	gap: 12px;
 }
 .center-txt{
-	color: #181818;
+	color: #191919;
 	text-align: center;
 	font-size: 14px;
 	font-style: normal;
