@@ -547,7 +547,7 @@ gap: 12px; /* 這行就是讓 h3 和 p 中間有 12px */
 .hero-banner {
 	width: 100%;
 	height: 640px;
-	background-image: url('../images/bg/banner-desktop.webp');
+	background-image: url('../images/single/banner-desktop.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -557,7 +557,7 @@ gap: 12px; /* 這行就是讓 h3 和 p 中間有 12px */
 @media (max-width: 992px) {
 	.hero-banner {
 	  height: 640px;
-	  background-image: url('../images/bg/banner-pad.jpg');
+	  background-image: url('../images/single/banner-pad.jpg');
 	  border-radius: 0 0 40px 40px;
 	}
   } 
@@ -566,7 +566,7 @@ gap: 12px; /* 這行就是讓 h3 和 p 中間有 12px */
 @media (max-width: 768px) {
 	.hero-banner {
 	  height: 480px;
-	  background-image: url('../images/bg/banner-mobile.jpg');
+	  background-image: url('../images/single/banner-mobile.jpg');
 	  border-radius: 0 0 20px 20px;
 
 	}
