@@ -592,7 +592,7 @@ color: #181818;
 .hero-banner {
 	width: 100%;
 	height: 640px;
-	background-image: url('../images/bg/banner-desktop.webp');
+	background-image: url('../images/editor2/img_banner-desktop.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -602,7 +602,7 @@ color: #181818;
 @media (max-width: 992px) {
 	.hero-banner {
 	  height: 640px;
-	  background-image: url('../images/bg/banner-pad.jpg');
+	  background-image: url('../images/editor2/img_banner-pad.jpg');
 	  border-radius: 0 0 40px 40px;
 	}
   } 
@@ -611,7 +611,7 @@ color: #181818;
 @media (max-width: 768px) {
 	.hero-banner {
 	  height: 480px;
-	  background-image: url('../images/bg/banner-mobile.jpg');
+	  background-image: url('../images/editor2/img_banner-mobile.jpg');
 	  border-radius: 0 0 20px 20px;
 
 	}
