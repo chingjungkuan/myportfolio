@@ -566,7 +566,7 @@ gap: 12px; /* 這行就是讓 h3 和 p 中間有 12px */
 @media (max-width: 768px) {
 	.hero-banner {
 	  height: 480px;
-	  background-image: url('../images/single/banner-mobile.jpg');
+	  background-image: url('../images/single/img_banner-mobile.jpg');
 	  border-radius: 0 0 20px 20px;
 
 	}
