@@ -543,7 +543,7 @@ color: #191919;
 .hero-banner {
 	width: 100%;
 	height: 640px;
-	background-image: url('../images/bg/banner-desktop.webp');
+	background-image: url('../images/project/img_banner-desktop.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -553,7 +553,7 @@ color: #191919;
 @media (max-width: 992px) {
 	.hero-banner {
 	  height: 640px;
-	  background-image: url('../images/bg/banner-pad.jpg');
+	  background-image: url('../images/project/img_banner-pad.jpg');
 	  border-radius: 0 0 40px 40px;
 	}
   } 
@@ -562,7 +562,7 @@ color: #191919;
 @media (max-width: 768px) {
 	.hero-banner {
 	  height: 480px;
-	  background-image: url('../images/bg/banner-mobile.jpg');
+	  background-image: url('../images/project/img_banner-mobile.jpg');
 	  border-radius: 0 0 20px 20px;
 
 	}
@@ -875,7 +875,7 @@ color: #191919;
 	padding: 40px 16px;
 }
 .sub-nav li a.active {
-	color: #007bff; /* 例：高亮藍色 */
+	color: #007bff; 
 	border-bottom: 2px solid #007bff; /* 或加底線強調 */
 }
 .sub-nav.active {
@@ -933,7 +933,7 @@ color: #191919;
 .box p {
     margin: 5px 0;
 	margin: 5px 0;
-	overflow-wrap: anywhere; /* 🔥推薦用這個 */
+	overflow-wrap: anywhere; /* 推薦用這個 */
 	word-break: break-word; /* 可以保留，也可刪 */
 	
 }
