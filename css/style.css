@@ -26,14 +26,17 @@
 html,body{
 	font-family: '微軟正黑體', arial;
 }
-h1,h2,h3,h4,h5,h6,p{
+h1,h2,h3,h4,h5,h6{
 	margin: 0;
+	color: #191919;
 }
 h5{
 	font-size:16px;
+	
 }
 h6{
 	font-size:14px;
+	
 }
 ul{
 	margin: 0;
@@ -231,7 +234,7 @@ a{
 	height: 60px; 
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: LEFT center;
+	background-position: center;
 }
 .image-manual {
 	background-size: contain;
@@ -858,7 +861,7 @@ a{
 
   .contact-left,
   .contact-right {
-    align-items: flex-start;
+    align-items: flex-end;
     margin-bottom: 20px;
   }
 
@@ -944,7 +947,7 @@ a{
 	margin-top: 0px;
 	margin-bottom: 12px;
 	font-weight: 700;
-	font-size: 32px;
+	font-size: 24px;
 	color: #0040BD;
 }
 @media screen and (max-width: 960px){
@@ -958,8 +961,8 @@ a{
 
 .ui-design-preview .para{
 	max-width: 800px;
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 14px;
+	line-height: 150%;
 	text-align: left;
 	color: #191919;
 	margin-bottom: 24px;
@@ -1043,11 +1046,11 @@ a{
 
 .footer-copyright {
   background-color: rgba(0, 0, 0, 0.8);
-  color: #ccc;
+  color: #fff;
   text-align: center;
   font-size: 14px;
   padding: 4px 0;
-  line-height: 24px;
+  line-height: 14px;
 }
 
 /* -------------------------- *\
