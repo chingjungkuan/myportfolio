@@ -68,7 +68,6 @@ a{
 	padding-right: 16px;
 }
 .row{
-	/*border: 1px solid blue;*/
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: -16px;
@@ -76,7 +75,6 @@ a{
 }
 
 .row-sm{
-	/*border: 1px solid blue;*/
 	display: flex;
 	flex-wrap: wrap;
 	margin-left: -16px;
@@ -90,7 +88,7 @@ a{
 	flex-wrap: wrap;
 	margin-left: -16px;
 	margin-right: -16px;
-	margin-bottom: 80px;
+	margin-bottom: 40px;
 }
 
 .row-no-top {
@@ -181,13 +179,11 @@ a{
 
 
 .btn-group-center{
-	/*border: 1px solid #fff;*/
+	display: flex;
+    gap: 12px;
 	text-align: left;
 }
-.btn-group-center .btn{
-	margin-left: 0px;
-	margin-right: 12px;
-}
+
 .btn-group-right{
 	text-align: right;
 }
@@ -199,7 +195,7 @@ a{
 	.btn-group-center .btn{
 		margin-left: 0;
 		margin-right: 0;
-		margin-bottom: 24px;
+		
 	}
 	.btn-group-center .btn:last-child{
 		margin-bottom: 0;
@@ -298,7 +294,7 @@ a{
 	z-index: 500;
 	top: 0;
 	left: 0;
-	border-radius: 0 0 16px 16px; /* 移除 radius，貼齊上方 */
+	border-radius: 0 0 16px 16px; 
   }
   
   /* 這裡是核心：控制內容不會貼邊 */
@@ -595,9 +591,6 @@ a{
 	}
 }
 
-
-
-
 @media screen and (max-width: 768px) {
 
   .jumbotron .logo-wrapper {
@@ -694,7 +687,7 @@ a{
 /* section-intro */
 
 .section-intro .title{
-	font-size: 48px;
+	font-size: 36px;
 	color: #191919;
 	font-weight: bold;
 }
@@ -711,28 +704,27 @@ a{
 	text-align: left;
 	font-size: 14px;
 	line-height: 21px;
-	color: #191919;
 	max-width: 480px;
 	margin: 0 0;
 }
 
-/* service-item */
+/* skill-item */
 @media screen and (max-width: 768px){
-	.service-item{
+	.skill-item{
 		margin-bottom: 48px;
 	}
 	/* 屬性選擇器 */
-	[class^="col-"]:last-child .service-item{
+	[class^="col-"]:last-child .skill-item{
 		margin-bottom: 0;
 	}
-	/*.service-item:last-child{
+	/*.skill-item:last-child{
 		margin-bottom: 0;
 	}*/
 }
-.service-item .preview{
+.skill-item .preview{
 	padding-top: 16px;
 }
-.service-item .title{
+.skill-item .title{
 	font-size: 24px;
 	color: #191919;
 	margin-bottom: 8px;
@@ -741,14 +733,13 @@ a{
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-.service-item .subtitle{
+.skill-item .subtitle{
 	font-size: 16px;
 	color: #0040BD;
 	margin-bottom: 16px;
 }
-.service-item .para{
+.skill-item .para{
 	font-size: 16px;
-	color: #191919;
 	line-height: 24px;
 	margin-bottom: 24px;
 	text-align: left;
@@ -909,7 +900,7 @@ a{
 	.contact .container .row {
 	  flex-direction: column; /* 垂直排列 */
 	  align-items: flex-start; /* 左對齊 */
-	  gap: 24px; /* 增加上下間距 */
+	  gap: 12px;
 	}
   
 	.contact .container .row .title {
