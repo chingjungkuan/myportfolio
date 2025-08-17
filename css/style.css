@@ -128,6 +128,8 @@ a{
 /* btn */
 .btn{
 	display: inline-block;
+	align-self: flex-start; /* 關鍵：依文字寬度 */
+	width: auto;
 	vertical-align: top;
 	font-size: 16px;
 	line-height: 24px;
@@ -959,11 +961,76 @@ a{
 	margin-bottom: 24px;
 }
 
-
-
 .ui-design-preview .subtitle{
 	font-size: 20px;
 }
+/* 測試卡片3欄位 */
+  .wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+   
+  }
+
+  /* 三欄容器 */
+  .cards{
+    display: flex;
+    gap: 24px;              /* 欄間距 */
+    flex-wrap: wrap;        /* 窄螢幕自動換行 */
+    align-items: stretch;   /* 讓高度一致 */
+  }
+
+  /* 卡片 */
+  .card{
+    background: var(--bg);
+	border: 1px solid #efefef;
+    border-radius: 12px;
+    padding: 28px;
+    flex: 1 1 calc(33.333% - 16px);  /* 3 欄 */
+    min-width: 280px;                 /* 避免太窄 */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0,0,0,.04);
+  }
+
+  .tag-outline{
+    display: inline-block;
+	align-self: flex-start; /* 關鍵：依文字寬度 */
+	width: auto;
+	border: 1px solid #666;
+    font-size: 12px;
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #F8F8F8;
+    color: #666;
+    margin-bottom: 8px;
+  }
+
+
+
+  .subtitle{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--ink);
+    margin: 0 0 12px 0;
+  }
+
+
+
+  .spacer{
+    flex: 1;   /* 推開按鈕，讓卡片底部對齊 */
+  }
+
+
+
+  /* 簡單 RWD：小於 900px 改為兩欄，小於 640px 一欄 */
+  @media (max-width: 900px){
+    .card{ flex-basis: calc(50% - 12px); }
+  }
+  @media (max-width: 640px){
+    .card{ flex-basis: 100%; }
+  }
+
 
 /* footer */
 .footer {
