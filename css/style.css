@@ -311,7 +311,7 @@ a{
   
 
 .navbar .brand {
-	width: 160px;
+	width: 120px;
 	height: 64px;
 	background-image: url('../images/common/w_logo_name.svg');
 	background-size: contain;
@@ -1125,3 +1125,4 @@ a{
 		display: none;
 	}
 }
+
