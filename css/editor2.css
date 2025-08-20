@@ -712,7 +712,7 @@ color: #181818;
   .navbar .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 24px; /* ✅ 這行最重要：保證左右 padding 不貼邊 */
+	padding: 0 24px; /* 這行最重要：保證左右 padding 不貼邊 */
 	display: grid;
 	grid-template-columns: auto 1fr auto;
 	align-items: center;
@@ -720,7 +720,7 @@ color: #181818;
   
 
 .navbar .brand {
-	width: 160px;
+	width: 120px;
 	height: 64px;
 	background-image: url('../images/common/w_logo_name.svg');
 	background-size: contain;
