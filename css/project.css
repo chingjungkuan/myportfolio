@@ -394,12 +394,6 @@ color: #191919;
 	  grid-template-columns: 1fr; /* 手機版變成一列1個 */
 	  column-gap: 0; /* 手機版就不需要左右間距 */
 	}
-
-	.three-column-grid .item {
-	
-		padding: 16px;
-	
-	  }
   }  
   
 
@@ -420,7 +414,7 @@ color: #191919;
 	border-radius: 4px;
 	transition: all 0.3s;
 }
-/* 主要的按鈕 */
+/* 主要按鈕 */
 .btn.btn-primary{
 	background-color: #185ADB;
 	border: 1px solid #185ADB;
@@ -430,7 +424,7 @@ color: #191919;
 	background-color: #0040BD;
 	border: 1px solid #0040BD;
 }
-/* 次要的按鈕 */
+/* 次要按鈕 */
 .btn.btn-secondary{
 	border: 1px solid #185ADB;
 	color: #185ADB;
@@ -512,7 +506,7 @@ color: #191919;
 	background-position: left;
 	background-repeat: no-repeat;
 
-	height: 200px; /* 自訂想要的高 */
+	height: 200px; /* 可自訂高 */
 	width: auto;
 	max-width: 120px;
 	aspect-ratio: 4 / 3;
@@ -963,7 +957,7 @@ color: #191919;
 		/* white-space: nowrap; 防止換行 */
 }
 
-/* Overview 概述*/
+/* Overview*/
 
 .overview {
 	display: grid;
@@ -996,8 +990,9 @@ color: #191919;
   }
   
 .team-info {
+	line-height: 150%;
 	background: #f4f4f4;
-	border-radius: 12px;
+	border-radius: 4px;
 	padding: 12px;
 	border-left: 4px solid #ccc;
   }
@@ -1193,12 +1188,12 @@ color: #191919;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 8px;
 }
 
 .footer-brand {
   display: block;
-  width: 240px;
+  width: 100px;
   height: 36px;
   background-image: url('../images/common/w_logo_name.svg');
   background-repeat: no-repeat;
